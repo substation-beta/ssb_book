@@ -1,0 +1,36 @@
+[package]
+# Project information
+name = "ssb_book"
+version = "0.1.0"
+authors = ["Bastian 'McWhite' Ganze", "Christoph 'Youka' Spanknebel"]
+description = "Documentation of ssb format."
+# Project type
+edition = "2018"
+# Documentation
+keywords = ["ssb", "book", "subtitle", "spec"]
+categories = ["documentation"]
+readme = "README.md"
+license = "CC-BY-4.0"
+repository = "https://github.com/substation-beta/ssb_book"
+# Document generation
+build = "book.rs"
+# No public release (deliver output manually)
+publish = false
+
+[badges]
+# Development status
+travis-ci = {repository = "substation-beta/ssb_book", branch = "master"}
+maintenance = {status = "actively-developed"}
+
+[[bin]]
+# Generate docs by build script, add shortcut as binary
+name = "open_book"
+path = "open_book.rs"
+
+[dependencies]
+# Open URL by host
+open = "~1.2.2"  # https://crates.io/crates/open
+
+[build-dependencies]
+# Markdown-to-html converter (mdbook vs. comrak vs. pulldown-cmark)
+mdbook = "~0.2.3"    # https://crates.io/crates/mdbook
