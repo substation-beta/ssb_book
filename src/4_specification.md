@@ -394,13 +394,21 @@ Gaussian blur on object + border. Sigma value defines strength. Horizontal and v
 `[blend=overlay]`
 
 // TODO: additional blending modi?
+
 Blending mode (see here). Following modes are available:
+
 overlay: source color
+
 add: source color + destination color
+
 subtract: source color - destination color
+
 multiply: source color * destination color
+
 invert: ~destination color
+
 difference: abs(source color - destination color)
+
 screen: 1 - (1 - source color) * (1 - destination color)
 
 ### Animation
