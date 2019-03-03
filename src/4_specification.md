@@ -93,7 +93,17 @@ Note is just an information beside, renderers ignore it.
 ### text
 Text is a mix of style tags, text and shape descriptions. Everything what should be rendered is written here.
 
-TODO
+## RESOURCE section
+The RESOURCE section describes all resources that will be used within the subtitle format. This includes images and fonts.
+
+### Texture
+Texture: TEXTURE_ID, data | url, string
+
+### Fonts
+Font: font_family, style, base64_encoded_string
+
+font_family: NO COMMA
+style: regular, bold, italic, bold-italic
 
 # 4. Objects
 ## Comment
@@ -166,8 +176,6 @@ Font decoration 2. ‘y’ for strikeouted, ‘n’ for normal.
 #### position
 `[position=0,0]`
 
-`[position=0,0,0]`
-
 Position on screen. 2D or 3D coordinate possible.
 
 #### alignment
@@ -194,10 +202,11 @@ Two values: horizontal and vertical offset from anchor point as object width and
 Margin to screen edges.
 
 #### direction
-// TODO: Think about how much this makes sense (japanese, hibru)
-`[direction=0]`
+`[direction=LTR]`
 
-Direction of object position flow as angle (f.e. ‘-90’ would be vertical down).
+LTR, RTL, TTB, BTT
+
+left-to-right, right-to-left, top-down, bottom-up
 
 #### space
 `[space=0]`
@@ -265,6 +274,18 @@ Resets transformations in source block.
 ### Geometry
 #### mode
 `[mode=text]`
+abcdefghijklmnopqrstuvwxyz
+
+`[mode=shape]`
+m - move (m 0 0)
+l - line (l 0 0 1 1)
+a - arcs (a 0 0 360)
+b - cubic bezier (b 0 0 1 1 2 2 3 3)
+
+`[mode=point]`
+0 0
+
+Geometry type to draw. Form will be interpreted by non-style content of fourth cell in source block. Default mode is text.
 
 #### border
 `[border=2]`
@@ -285,18 +306,34 @@ Border and line join style. Can be ‘round’, ‘bevel’ or ‘miter’.
 `[cap=round]`
 Border and line join style. Can be ‘round’, 'butt' or ‘square’.
 
+### Textures
+
+#### texture
+`[texture=RESOURCE_ID]`
+
+Texture on object. Texturing enabled by a valid image file name or ‘frame’ (current video frame), disabled by an invalid value (like an empty value).
+
+#### texfill
+`[texfill=0,0,1,0]`
+
+`[texfill=0,0,1,0,clamp]`
+
+Texture position, size and wrapping.
+Offset: The first two numbers describe where the texture starts (as a value between 0 - 1 (0-100%))
+Range: The two numbers after that describe how far the texture stretches in respect to the object (as a value between 0 -1 (0-100%))
+Wrapping modes: ’clamp’, ‘repeat’ and ‘mirror’. ‘clamp’ is default.
+
 ### Color
 #### color
-// TODO: color as one word for everything is confusing
 `[color=FFFFFF]`
 
-`[color-gradient=FFFFFF,FFFFFF]`
+`[color=FFFFFF,FFFFFF]`
 
-`[color-gradient=FFFFFF,FFFFFF,FFFFFF]`
+`[color=FFFFFF,FFFFFF,FFFFFF]`
 
-`[color-corners=FFFFFF,FFFFFF,FFFFFF,FFFFFF]`
+`[color=FFFFFF,FFFFFF,FFFFFF,FFFFFF]`
 
-`[color-corners-mid=FFFFFF,FFFFFF,FFFFFF,FFFFFF,FFFFFF]`
+`[color=FFFFFF,FFFFFF,FFFFFF,FFFFFF,FFFFFF]`
 
 `[bordercolor=000000]`
 
@@ -344,6 +381,74 @@ normal: source color * source alpha + destination color * (1 - source alpha)
 `[blur-v=0]`
 
 Gaussian blur on object + border. Sigma value defines strength. Horizontal and vertical blur available.
+
+### Rastering
+#### mask
+//TODO: How to have less tags (try to unite target and mask-mode and maybe mask-clear)
+`[target=mask]`
+
+`[target=frame]`
+
+`[mask-mode=normal]`
+
+`[mask-mode=invert]`
+
+`[mask-clear]`
+
+#### blend
+`[blend=overlay]`
+
+// TODO: additional blending modi?
+Blending mode (see here). Following modes are available:
+overlay: source color
+add: source color + destination color
+subtract: source color - destination color
+multiply: source color * destination color
+invert: ~destination color
+difference: abs(source color - destination color)
+screen: 1 - (1 - source color) * (1 - destination color)
+
+### Animation
+#### animate
+`[animate=[color=000000;translate-x=20]]`
+
+`[animate=t,[color=000000;translate-x=20]]`
+
+`[animate=0,1000,[color=000000;translate-x=20]]`
+
+`[animate=500,1000,[color=000000;translate-x=-20]]`
+
+`[animate=0,1000,sin(t*pi),[color=000000;translate-x=20]]`
+
+Interpolates style properties over time.
+First version goes over whole source block time to interpolate style tags.
+Second version additionally sends interpolation factor of current frame through an equation.
+Third version specifies a time zone to interpolate style tags.
+Fourth version combines all versions. A description for his values:
+First value:
+Start time in milliseconds.
+Positive number for offset to start time of source block.
+Negativ number for offset to end time of source block.
+Second value:
+End time in milliseconds.
+Positive number for offset to start time of source block.
+Negativ number for offset to end time of source block.
+Third value:
+Equation for interpolation factor.
+Fourth value:
+Style tags to interpolate.
+
+### Karaoke
+//TODO: Color and effects of standard karaoke
+#### k
+`[k=100]`
+
+Karaoke duration
+
+#### kset
+`[kset=0]`
+
+Reset ktime in ms to start-time of line.
 
 # 6. Examples
 ## Minimal

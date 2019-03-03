@@ -4,4 +4,4 @@
 - [History](./2_history.md)
 - [Motivation](./3_motivation.md)
 - [Specification](./4_specification.md)
-- [Specification_NEXT](5_specification_next.md)
+- [Specification_next](./5_specification_next.md)
