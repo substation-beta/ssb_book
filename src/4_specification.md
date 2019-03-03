@@ -366,11 +366,6 @@ Color for object or his border. Can be mono, left-to-right gradient, left-to-mid
 
 Transparency for object or his border. Can be mono, left-to-right gradient, left-to-mid-to-right gradient, 4-corners gradient or 4-corners + center gradient. Value in hexadecimal (00 = invisible, FF = opaque).
 
-#### blend
-`[blend=normal]`
-
-normal: source color * source alpha + destination color * (1 - source alpha)
-
 #### blur
 `[blur=0]`
 
