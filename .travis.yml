@@ -1,30 +1,21 @@
 # Ubuntu (xenial) as operating system
 dist: xenial
 
-# Setup rust environment with stable & newest language branch
+# Setup rust environment with stable language branch only
 language: rust
-rust:
-  - stable
-  - nightly
-# Ignore failures in nightly release and don't wait for it
-matrix:
-  allow_failures:
-    - rust: nightly
-  fast_finish: true
+rust: stable
+
 # Cache build dependencies
 cache: cargo
 
 # Execute build
-script:
-  - cargo build --verbose
+script: cargo build --verbose
 
 # Deploy build to release platform
 deploy:
-  - provider: pages # Github Pages
-    github-token: $GITHUB_TOKEN # Access token for deploy target
-    skip-cleanup: true  # Don't clean away output for deploy
-    local-dir: "target/book" # Directory to push to Github repository
-    repo: "substation-beta/substation-beta.github.io"  # Target repository
-    target-branch: "master" # Branch of target repository
-    on:
-      rust: stable  # Just for build with stable rust!
+  provider: pages # Github Pages
+  github-token: $GITHUB_TOKEN # Access token for deploy target
+  skip-cleanup: true  # Don't clean away output for deploy
+  local-dir: "target/book" # Directory to push to Github repository
+  repo: "substation-beta/substation-beta.github.io"  # Target repository
+  target-branch: "master" # Branch of target repository
