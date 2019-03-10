@@ -66,8 +66,8 @@ Depth of the room. Coordinates in range negative half of given depth until posit
 ### View
 Viewer perspective. Can be ‘orthogonal’ or ‘perspective’. Default is ‘orthogonal’. In case of ‘perspective’, objects are nearing screen center with increasing negative depth and double size with increasing positive depth. Depth 0 means original size.
 
-## MACROS section
-The MACROS section defines styles for use in following source blocks. Styles can be understand as macros, because that they are: source content with an identify name. Format of styles is...
+## MACRO section
+The MACRO section defines styles for use in following source blocks. Styles can be understand as macros, because that they are: source content with an identify name. Format of styles is...
 name: content
 Name can be a chain of characters except (obviously) : (U+3A).
 Content just shouldn’t be empty, that’s all.
@@ -278,8 +278,11 @@ abcdefghijklmnopqrstuvwxyz
 
 `[mode=shape]`
 m - move (m 0 0)
+
 l - line (l 0 0 1 1)
+
 a - arcs (a 0 0 360)
+
 b - cubic bezier (b 0 0 1 1 2 2 3 3)
 
 `[mode=point]`
@@ -379,25 +382,23 @@ Gaussian blur on object + border. Sigma value defines strength. Horizontal and v
 
 ### Rastering
 #### mask
-//TODO: How to have less tags (try to unite target and mask-mode and maybe mask-clear)
+//TODO: How to have less tags (try to unite target and mask-mode and maybe mask-clear)????
+// mask-invert??
+// mask-clear rausnehmen weil man einfach ein rechtek malen kann? Resetted die maske bei jeder line?
 `[target=mask]`
 
+`[target=mask-invert]`
+
 `[target=frame]`
-
-`[mask-mode=normal]`
-
-`[mask-mode=invert]`
 
 `[mask-clear]`
 
 #### blend
 `[blend=overlay]`
 
-// TODO: additional blending modi?
-
 Blending mode (see here). Following modes are available:
 
-overlay: source color
+overlay: source color ((destination alpha * destination color)) + ((1 -  destination alpha) * source color)
 
 add: source color + destination color
 
@@ -410,6 +411,8 @@ invert: ~destination color
 difference: abs(source color - destination color)
 
 screen: 1 - (1 - source color) * (1 - destination color)
+
+
 
 ### Animation
 #### animate
@@ -442,7 +445,8 @@ Fourth value:
 Style tags to interpolate.
 
 ### Karaoke
-//TODO: Color and effects of standard karaoke
+The standard karaoke effect will be an interpolation from "color" to "kcolor" in the given k duration.
+
 #### k
 `[k=100]`
 
@@ -452,6 +456,11 @@ Karaoke duration
 `[kset=0]`
 
 Reset ktime in ms to start-time of line.
+
+#### kcolor
+`[kcolor=FF00FF]`
+
+Color to which color the karaoke will interpolate within the timespam of the duration. For color syntax see the color tag.
 
 # 6. Examples
 ## Minimal
