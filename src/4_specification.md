@@ -64,16 +64,16 @@ Height of the room. Coordinates in range 0 until given height are visible. Defau
 Depth of the room. Coordinates in range negative half of given depth until positive half of given depth are visible. Default value is 1000, that means, -500 until +500 are visible depths.
 
 ### View
-Viewer perspective. Can be ‘orthogonal’ or ‘perspective’. Default is ‘orthogonal’. In case of ‘perspective’, objects are nearing screen center with increasing negative depth and double size with increasing positive depth. Depth 0 means original size.
+Viewer perspective. Can be ‘orthogonal’ or ‘perspective’. Default is ‘perspective’. In case of ‘orthogonal’, objects are nearing screen center with increasing negative depth and double size with increasing positive depth. Depth 0 means original size.
 
-## MACRO section
-The MACRO section defines styles for use in following source blocks. Styles can be understand as macros, because that they are: source content with an identify name. Format of styles is...
+## MACROS section
+The MACROS section defines styles for use in following source blocks. Styles can be understand as macros, because that they are: source content with an identify name. Format of styles is...
 name: content
 Name can be a chain of characters except (obviously) : (U+3A).
 Content just shouldn’t be empty, that’s all.
 
-## EVENT section
-The EVENT section describes what to render at all. Every source block tells the renderer: “when render what”.
+## EVENTS section
+The EVENTS section describes what to render at all. Every source block tells the renderer: “when render what”.
 Format of source blocks is...
 
 `start-end|template|note|text`
@@ -382,23 +382,26 @@ Gaussian blur on object + border. Sigma value defines strength. Horizontal and v
 
 ### Rastering
 #### mask
-//TODO: How to have less tags (try to unite target and mask-mode and maybe mask-clear)????
-// mask-invert??
-// mask-clear rausnehmen weil man einfach ein rechtek malen kann? Resetted die maske bei jeder line?
 `[target=mask]`
-
-`[target=mask-invert]`
 
 `[target=frame]`
 
+`[mask-mode=normal]`
+
+`[mask-mode=invert]`
+
 `[mask-clear]`
+
+Example:
+
+`[target=mask;mask-mode=invert;alpha=FF;blur=5;]KREIS_SMALL[target=frame;blur=0;]KREIS`
 
 #### blend
 `[blend=overlay]`
 
 Blending mode (see here). Following modes are available:
 
-overlay: source color ((destination alpha * destination color)) + ((1 -  destination alpha) * source color)
+overlay: source color (((source alpha * source color)) + ((1 -  source alpha) * destination color))
 
 add: source color + destination color
 
@@ -411,7 +414,6 @@ invert: ~destination color
 difference: abs(source color - destination color)
 
 screen: 1 - (1 - source color) * (1 - destination color)
-
 
 
 ### Animation
@@ -460,6 +462,10 @@ Reset ktime in ms to start-time of line.
 #### kcolor
 `[kcolor=FF00FF]`
 
+This will create something akin to the following animation tag for each syllable:
+
+`[animate=kStart,kEnd,t^0.5,[color=FF00FF]]`
+
 Color to which color the karaoke will interpolate within the timespam of the duration. For color syntax see the color tag.
 
 # 6. Examples
@@ -495,12 +501,12 @@ Height: 720
 Depth: 1000
 View: perspective
 
-#STYLES
+#MACROS
 Default: [bold=y]
 Mine: [bold=n;color=FF0000]
 Another: [Mine;position=100,200,-1;rotate-z=50%]I'm a
 
-#SOURCE
+#TARGET
 //0-2.0|||This line is a comment over 2 seconds!
 2.0-5:0.0|Another|Hello, i'm a note!|red,    rotated\ntext over multiple lines.
 5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape; texture=../ramen.tga]m 0 0 l 50.5 0 50.5 20.125 0 20.125
