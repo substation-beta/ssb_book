@@ -1,10 +1,10 @@
 # See <https://rust-lang-nursery.github.io/mdBook/format/config.html>
+
 [book]
 title = "Substation Beta format"
 authors = ["Bastian 'McWhite' Ganze", "Christoph 'Youka' Spanknebel"]
 description = "Documentation of Substation Beta format."
-src = "src"
-multilingual = false
 
 [build]
+build-dir = "target/book"
 create-missing = false
