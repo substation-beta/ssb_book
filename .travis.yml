@@ -11,6 +11,13 @@ cache: cargo
 # Execute build
 script: cargo build --verbose
 
+# Post processing
+addons:
+  apt:
+    packages:
+      - inkscape
+after_success: inkscape --without-gui --export-text-to-path --export-pdf=target/book/ssb_reference_card.pdf target/book/ssb_reference_card.svg
+
 # Deploy build to release platform
 deploy:
   provider: pages # Github Pages

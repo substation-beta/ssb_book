@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SVG 1.1/2000 on DN4 full canvas -->
+<svg id="ssb_reference_card" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="210mm" height="297mm" viewBox="0 0 210 297">
+    <!-- Root element description -->
+    <title property="dc:title">ssb reference card</title>
+    <!-- SVG metadata (http://www.dublincore.org/specifications/dublin-core/dcmes-xml/2002-07-31/) -->
+    <metadata>
+        <rdf:RDF>
+            <cc:Work rdf:about="https://github.com/substation-beta">
+				<dc:description>Short description of ssb subtitle format.</dc:description>
+                <dc:creator>Christoph 'Youka' Spanknebel</dc:creator>
+                <dc:date>2019-04-06</dc:date>
+                <dc:language>en</dc:language>
+                <dc:format>image/svg+xml</dc:format>
+                <dc:subject>ssb, subtitle, format, reference, card, documentation, svg</dc:subject>
+				<dc:source>https://substation-beta.github.io</dc:source>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <!-- Definitions / re-usable entities and properties -->
+    <defs>
+        <rect id="ssb_sm_box" width="105" height="100" />
+    </defs>
+    <!-- Drawings -->
+    <g font-family="Verdana, Arial, sans-serif" font-size="4" fill="black">
+        <g transform="translate(0,0)">
+            <use xlink:href="#ssb_sm_box" fill="blue" />
+            <text>
+                <tspan y="1em">Hello world!</tspan>
+                <tspan x="0" dy="1em">Test</tspan>
+            </text>
+        </g>
+        <g transform="translate(105,0)">
+            <use xlink:href="#ssb_sm_box" fill="green" />
+            <text>
+                <tspan y="1em">Hello world!</tspan>
+                <tspan x="0" dy="1em">Test</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
