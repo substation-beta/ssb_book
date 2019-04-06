@@ -8,15 +8,14 @@ rust: stable
 # Cache build dependencies
 cache: cargo
 
-# Execute build
-script: cargo build --verbose
-
-# Post processing
+# System dependency
 addons:
   apt:
     packages:
       - inkscape
-after_success: inkscape --without-gui --export-text-to-path --export-pdf=target/book/ssb_reference_card.pdf target/book/ssb_reference_card.svg
+
+# Execute build
+script: cargo build --verbose
 
 # Deploy build to release platform
 deploy:
