@@ -8,14 +8,17 @@ rust: stable
 # Cache build dependencies
 cache: cargo
 
-# System dependency
+# System dependencies
 addons:
   apt:
     packages:
       - inkscape
+      - fonts-liberation
 
 # Execute build
-script: cargo build --verbose
+script:
+  - fc-cache
+  - cargo build --verbose
 
 # Deploy build to release platform
 deploy:

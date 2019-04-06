@@ -9,7 +9,6 @@ fn main() {
     Command::new("inkscape")
         .args(&[
             "--without-gui",
-            "--export-text-to-path",
             "--export-pdf=target/book/ssb_reference_card.pdf",
             "target/book/ssb_reference_card.svg"
         ])
