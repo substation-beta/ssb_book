@@ -6,7 +6,7 @@
     xmlns:cc="http://creativecommons.org/ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="210mm" height="500mm" viewBox="0 0 210 500">
+    width="210mm" height="1000mm" viewBox="0 0 210 1000">
     <!-- Root element description -->
     <title property="dc:title">ssb reference card</title>
 	<desc property="dc:description">Short description of ssb subtitle format.</desc>
@@ -29,8 +29,10 @@
     <!-- Definitions / re-usable entities and properties -->
     <defs>
         <rect id="title_box" width="210" height="20" />
-        <rect id="sm_box" width="105" height="85" />
-        <rect id="events_box" width="210" height="225" />
+        <rect id="small_box" width="105" height="85" />
+        <rect id="events_geometries_box" width="105" height="225" />
+        <rect id="tags_box" width="210" height="300" />
+        <rect id="example_box" width="210" height="200" />
     </defs>
     <!-- Styling elements -->
     <style>
@@ -59,17 +61,12 @@
         }
 
         /* Area coloring */
-        g#format use,
-        g#sections use,
-        g#info use,
-        g#target use,
-        g#macros use,
-        g#resources use,
-        g#events use {
+        g use {
             stroke: gray;
             stroke-width: 0.25px;
         }
         g#title use {
+            stroke: none;
             fill: white;
         }
         g#format use {
@@ -79,18 +76,22 @@
             fill: #c0ffc0;
         }
         g#info use,
-        g#resources use {
+        g#resources use,
+        g#events use {
             fill: #a0d0ff;
         }
         g#target use,
         g#macros use {
             fill: #a0e0ff;
         }
-        g#events use {
-            fill: #a0d8ff;
+        g#geometries use {
+            fill: #d0d0ff;
         }
         g#tags use {
             fill: #ffc0ff;
+        }
+        g#example use {
+            fill: #f0f0f0;
         }
     </style>
     <!-- Drawings -->
@@ -102,7 +103,7 @@
         </text>
     </g>
     <g id="format" transform="translate(0,20)">
-        <use xlink:href="#sm_box" />
+        <use xlink:href="#small_box" />
         <text x="52.5" y="6" class="title">File format &amp; syntax</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5" class="important">File encoding: </tspan><tspan>text-only, UTF-8</tspan>
@@ -114,7 +115,7 @@
         </text>
     </g>
     <g id="sections" transform="translate(105,20)">
-        <use xlink:href="#sm_box" />
+        <use xlink:href="#small_box" />
         <text x="52.5" y="6" class="title">Sections</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5">SBB scripts are separated in sections for different properties.</tspan>
@@ -134,7 +135,7 @@
         </text>
     </g>
     <g id="info" transform="translate(0,105)">
-        <use xlink:href="#sm_box" />
+        <use xlink:href="#small_box" />
         <text x="52.5" y="6" class="title">Info section</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5">The meta section contains some side informations and has nothing</tspan>
@@ -152,7 +153,7 @@
         </text>
     </g>
     <g id="target" transform="translate(105,105)">
-        <use xlink:href="#sm_box" />
+        <use xlink:href="#small_box" />
         <text x="52.5" y="6" class="title">Target section</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5">Contains size information for the canvas that will be rednered on.</tspan>
@@ -171,7 +172,7 @@
         </text>
     </g>
     <g id="macros" transform="translate(0,190)">
-        <use xlink:href="#sm_box" />
+        <use xlink:href="#small_box" />
         <text x="52.5" y="6" class="title">Macros section</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5">In the macros section you can define collections of tags to use them</tspan>
@@ -186,7 +187,7 @@
         </text>
     </g>
     <g id="resources" transform="translate(105,190)">
-        <use xlink:href="#sm_box" />
+        <use xlink:href="#small_box" />
         <text x="52.5" y="6" class="title">Resources section</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5">Usually defined at the end of the file due to possibly being very long.</tspan>
@@ -203,8 +204,29 @@
         </text>
     </g>
     <g id="events" transform="translate(0,275)">
-        <use xlink:href="#events_box" />
-        <text x="105" y="6" class="title">Events section</text>
+        <use xlink:href="#events_geometries_box" />
+        <text x="52.5" y="6" class="title">Events section</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5"></tspan>
+        </text>
+    </g>
+    <g id="geometries" transform="translate(105,275)">
+        <use xlink:href="#events_geometries_box" />
+        <text x="52.5" y="6" class="title">Geometries</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5"></tspan>
+        </text>
+    </g>
+    <g id="tags" transform="translate(0,500)">
+        <use xlink:href="#tags_box" />
+        <text x="105" y="6" class="title">Tags</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5"></tspan>
+        </text>
+    </g>
+    <g id="example" transform="translate(0,800)">
+        <use xlink:href="#example_box" />
+        <text x="105" y="6" class="title">Example</text>
         <text y="7" transform="translate(2)">
             <tspan x="0" dy="5"></tspan>
         </text>
