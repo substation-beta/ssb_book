@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- SVG 1.1/2000 on DN4 full canvas -->
-<svg id="ssb_reference_card" version="1.1"
+<svg version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:cc="http://creativecommons.org/ns#"
@@ -9,40 +9,103 @@
     width="210mm" height="297mm" viewBox="0 0 210 297">
     <!-- Root element description -->
     <title property="dc:title">ssb reference card</title>
+	<desc property="dc:description">Short description of ssb subtitle format.</desc>
     <!-- SVG metadata (http://www.dublincore.org/specifications/dublin-core/dcmes-xml/2002-07-31/) -->
     <metadata>
         <rdf:RDF>
             <cc:Work rdf:about="https://github.com/substation-beta">
-                <dc:description>Short description of ssb subtitle format.</dc:description>
                 <dc:creator>Christoph 'Youka' Spanknebel</dc:creator>
-                <dc:date>2019-04-06</dc:date>
+                <dc:contributor>Bastian 'McWhite' Ganze</dc:contributor>
+                <dc:date>2019-04-07</dc:date>
                 <dc:language>en</dc:language>
-                <dc:format>image/svg+xml</dc:format>
                 <dc:subject>ssb, subtitle, format, reference, card, documentation, svg</dc:subject>
                 <dc:source>https://substation-beta.github.io</dc:source>
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
                 <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
             </cc:Work>
         </rdf:RDF>
     </metadata>
     <!-- Definitions / re-usable entities and properties -->
     <defs>
-        <rect id="ssb_sm_box" width="105" height="100" />
+        <rect id="title_box" width="210" height="20" />
+        <rect id="sm_box" width="105" height="80" />
     </defs>
+    <!-- Styling elements -->
+    <style>
+        /* Text */
+        text {
+            font-family: Liberation Sans,Arial,Helvetica,sans-serif;
+            font-size: 3.5px;
+            white-space: pre;
+        }
+
+        /* Titles */
+        text.title {
+            text-anchor: middle;
+            font-weight: bold;
+            font-size: 6px;
+        }
+
+        /* Inline text */
+        tspan.important {
+            font-weight: bold;
+        }
+
+        /* Area coloring */
+        g#format use,
+        g#sections use {
+            stroke: gray;
+            stroke-width: 0.5px;
+        }
+        g#title use {
+            fill: white;
+        }
+        g#format use {
+            fill: #ffe0a0;
+        }
+        g#sections use {
+            fill: #c0ffc0;
+        }
+    </style>
     <!-- Drawings -->
-    <g font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="5" fill="white">
-        <g transform="translate(0,0)">
-            <use xlink:href="#ssb_sm_box" fill="blue" />
-            <text>
-                <tspan x="0" dy="5">Hello world!</tspan>
-                <tspan x="0" dy="5">Test1</tspan>
-            </text>
-        </g>
-        <g transform="translate(105,0)">
-            <use xlink:href="#ssb_sm_box" fill="green" />
-            <text>
-                <tspan x="0" dy="5">Hello world!</tspan>
-                <tspan x="0" dy="5">Test2</tspan>
-            </text>
-        </g>
+    <g id="title">
+        <use xlink:href="#title_box" />
+        <text class="title">
+            <tspan x="105" dy="10" font-size="8">Substation Beta (SSB) v0.1</tspan>
+            <tspan x="105" dy="6" font-size="4">Modern subtitles</tspan>
+        </text>
+    </g>
+    <g id="format" transform="translate(0,20)">
+        <use xlink:href="#sm_box" />
+        <text x="52.5" y="6" class="title">File format &amp; syntax</text>
+        <text y="7" transform="translate(1)">
+            <tspan x="0" dy="5" class="important">File encoding: </tspan><tspan>text-only, UTF-8</tspan>
+            <tspan x="0" dy="5" class="important">Line breaks: </tspan><tspan>Windows (CRLF) &amp; Unix (LF)</tspan>
+            <tspan x="0" dy="5" class="important">Data layout: </tspan><tspan>line-based</tspan>
+            <tspan x="0" dy="5" class="important">Ignore empty lines: </tspan><tspan>yes</tspan>
+            <tspan x="0" dy="5" class="important">Comments: </tspan><tspan>lines beginning with //</tspan>
+            <tspan x="0" dy="5" class="important">Syntax errors: </tspan><tspan>Display depends on implementation</tspan>
+        </text>
+    </g>
+    <g id="sections" transform="translate(105,20)">
+        <use xlink:href="#sm_box" />
+        <text x="52.5" y="6" class="title">Sections</text>
+        <text y="7" transform="translate(1)">
+            <tspan x="0" dy="5">SBB scripts are separated in sections for different properties.</tspan>
+            <tspan x="0" dy="5">Sections begin with a header. It's a name, starting with character #.</tspan>
+            <tspan x="0" dy="5">They can be in any order but this is the recommended order:</tspan>
+            <tspan x="0" dy="5" class="important">#INFO</tspan>
+            <tspan x="0" dy="5">Meta information.</tspan>
+            <tspan x="0" dy="5" class="important">#TARGET</tspan>
+            <tspan x="0" dy="5">Target frame dimensions and other properties.</tspan>
+            <tspan x="0" dy="5" class="important">#MACROS</tspan>
+            <tspan x="0" dy="5">Base macros to complement render data.</tspan>
+            <tspan x="0" dy="5">Use this to create base styling for your lines.</tspan>
+            <tspan x="0" dy="5" class="important">#EVENTS</tspan>
+            <tspan x="0" dy="5">Render data &amp; condition.</tspan>
+            <tspan x="0" dy="5" class="important">#RESOURCES</tspan>
+            <tspan x="0" dy="5">Describes all resources like textures and fonts.</tspan>
+        </text>
     </g>
 </svg>
