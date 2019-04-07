@@ -6,7 +6,7 @@
     xmlns:cc="http://creativecommons.org/ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="210mm" height="297mm" viewBox="0 0 210 297">
+    width="210mm" height="500mm" viewBox="0 0 210 500">
     <!-- Root element description -->
     <title property="dc:title">ssb reference card</title>
 	<desc property="dc:description">Short description of ssb subtitle format.</desc>
@@ -29,14 +29,17 @@
     <!-- Definitions / re-usable entities and properties -->
     <defs>
         <rect id="title_box" width="210" height="20" />
-        <rect id="sm_box" width="105" height="80" />
+        <rect id="sm_box" width="105" height="85" />
+        <rect id="events_box" width="210" height="225" />
     </defs>
     <!-- Styling elements -->
     <style>
         /* Text */
         text {
             font-family: Liberation Sans,Arial,Helvetica,sans-serif;
-            font-size: 3.5px;
+            font-size: 3.25px;
+        }
+        tspan {
             white-space: pre;
         }
 
@@ -51,12 +54,20 @@
         tspan.important {
             font-weight: bold;
         }
+        tspan.snippet {
+            fill: #606060;
+        }
 
         /* Area coloring */
         g#format use,
-        g#sections use {
+        g#sections use,
+        g#info use,
+        g#target use,
+        g#macros use,
+        g#resources use,
+        g#events use {
             stroke: gray;
-            stroke-width: 0.5px;
+            stroke-width: 0.25px;
         }
         g#title use {
             fill: white;
@@ -66,6 +77,20 @@
         }
         g#sections use {
             fill: #c0ffc0;
+        }
+        g#info use,
+        g#resources use {
+            fill: #a0d0ff;
+        }
+        g#target use,
+        g#macros use {
+            fill: #a0e0ff;
+        }
+        g#events use {
+            fill: #a0d8ff;
+        }
+        g#tags use {
+            fill: #ffc0ff;
         }
     </style>
     <!-- Drawings -->
@@ -79,23 +104,23 @@
     <g id="format" transform="translate(0,20)">
         <use xlink:href="#sm_box" />
         <text x="52.5" y="6" class="title">File format &amp; syntax</text>
-        <text y="7" transform="translate(1)">
+        <text y="7" transform="translate(2)">
             <tspan x="0" dy="5" class="important">File encoding: </tspan><tspan>text-only, UTF-8</tspan>
             <tspan x="0" dy="5" class="important">Line breaks: </tspan><tspan>Windows (CRLF) &amp; Unix (LF)</tspan>
             <tspan x="0" dy="5" class="important">Data layout: </tspan><tspan>line-based</tspan>
             <tspan x="0" dy="5" class="important">Ignore empty lines: </tspan><tspan>yes</tspan>
             <tspan x="0" dy="5" class="important">Comments: </tspan><tspan>lines beginning with //</tspan>
-            <tspan x="0" dy="5" class="important">Syntax errors: </tspan><tspan>Display depends on implementation</tspan>
+            <tspan x="0" dy="5" class="important">Syntax errors: </tspan><tspan>display depends on implementation</tspan>
         </text>
     </g>
     <g id="sections" transform="translate(105,20)">
         <use xlink:href="#sm_box" />
         <text x="52.5" y="6" class="title">Sections</text>
-        <text y="7" transform="translate(1)">
+        <text y="7" transform="translate(2)">
             <tspan x="0" dy="5">SBB scripts are separated in sections for different properties.</tspan>
             <tspan x="0" dy="5">Sections begin with a header. It's a name, starting with character #.</tspan>
             <tspan x="0" dy="5">They can be in any order but this is the recommended order:</tspan>
-            <tspan x="0" dy="5" class="important">#INFO</tspan>
+            <tspan x="0" dy="8" class="important">#INFO</tspan>
             <tspan x="0" dy="5">Meta information.</tspan>
             <tspan x="0" dy="5" class="important">#TARGET</tspan>
             <tspan x="0" dy="5">Target frame dimensions and other properties.</tspan>
@@ -106,6 +131,82 @@
             <tspan x="0" dy="5">Render data &amp; condition.</tspan>
             <tspan x="0" dy="5" class="important">#RESOURCES</tspan>
             <tspan x="0" dy="5">Describes all resources like textures and fonts.</tspan>
+        </text>
+    </g>
+    <g id="info" transform="translate(0,105)">
+        <use xlink:href="#sm_box" />
+        <text x="52.5" y="6" class="title">Info section</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5">The meta section contains some side informations and has nothing</tspan>
+            <tspan x="0" dy="5">to do what's rendered at the end. It's just interesting for editors.</tspan>
+            <tspan x="0" dy="5">Fields begin with a name, followed by ": " and the value.</tspan>
+            <tspan x="0" dy="5">There are no constraints but here are some examples:</tspan>
+            <tspan x="0" dy="8" class="important">Title</tspan>
+            <tspan x="0" dy="5">Script title.</tspan>
+            <tspan x="0" dy="5" class="important">Author</tspan>
+            <tspan x="0" dy="5">Script author.</tspan>
+            <tspan x="0" dy="5" class="important">Description</tspan>
+            <tspan x="0" dy="5">Script description.</tspan>
+            <tspan x="0" dy="5" class="important">Version</tspan>
+            <tspan x="0" dy="5">Script version.</tspan>
+        </text>
+    </g>
+    <g id="target" transform="translate(105,105)">
+        <use xlink:href="#sm_box" />
+        <text x="52.5" y="6" class="title">Target section</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5">Contains size information for the canvas that will be rednered on.</tspan>
+            <tspan x="0" dy="5">On differences to the actual material, will be scaled to fit.</tspan>
+            <tspan x="0" dy="5">Fields begin with a name, followed by ": " and the value.</tspan>
+            <tspan x="0" dy="5">Valid fields for frame are…</tspan>
+            <tspan x="0" dy="8" class="important">Width</tspan>
+            <tspan x="0" dy="5">Target frame width.</tspan>
+            <tspan x="0" dy="5" class="important">Height</tspan>
+            <tspan x="0" dy="5">Target frame height.</tspan>
+            <tspan x="0" dy="5" class="important">Depth</tspan>
+            <tspan x="0" dy="5">Used to decide what to render before what. Whole positive number.</tspan>
+            <tspan x="0" dy="5" class="important">View</tspan>
+            <tspan x="0" dy="5">Perspective of the view. Can be `orthogonal` or `perspective`.</tspan>
+            <tspan x="0" dy="5">Default: `perspective`.</tspan>
+        </text>
+    </g>
+    <g id="macros" transform="translate(0,190)">
+        <use xlink:href="#sm_box" />
+        <text x="52.5" y="6" class="title">Macros section</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5">In the macros section you can define collections of tags to use them</tspan>
+            <tspan x="0" dy="5">later. Use these macros to generate base stylings for your lines.</tspan>
+            <tspan x="0" dy="5">Macros begin with an unique identifier name, followed by ": " and</tspan>
+            <tspan x="0" dy="5">the associated text.</tspan>
+            <tspan x="0" dy="8">Examples:</tspan>
+            <tspan x="0" dy="5" class="snippet">default: font=Open Sans;font-size=12;</tspan>
+            <tspan x="0" dy="5" class="snippet">green: color=00FF00</tspan>
+            <tspan x="0" dy="8">Usage:</tspan>
+            <tspan x="0" dy="5" class="snippet">5:0.0-2:5:0.0|default||[$green;]example text</tspan>
+        </text>
+    </g>
+    <g id="resources" transform="translate(105,190)">
+        <use xlink:href="#sm_box" />
+        <text x="52.5" y="6" class="title">Resources section</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5">Usually defined at the end of the file due to possibly being very long.</tspan>
+            <tspan x="0" dy="5">This section contains links to the file system or base64 encoded</tspan>
+            <tspan x="0" dy="5">resources like fonts or textures.</tspan>
+            <tspan x="0" dy="5">You can define texture and font resources in the following manner:</tspan>
+            <tspan x="0" dy="8" class="important">Texture</tspan>
+            <tspan x="0" dy="5">Texture: TEXTURE_ID, data | url, string</tspan>
+            <tspan x="0" dy="5" class="important">Fonts</tspan>
+            <tspan x="0" dy="5">Font: FONT_FAMILY, style, base64_endoded_string</tspan>
+            <tspan x="0" dy="8">FONT_FAMILY is just the name you choose, it must not have a `,`</tspan>
+            <tspan x="0" dy="5">in the name though.</tspan>
+            <tspan x="0" dy="5">Style must be either `regular`,`bold`,`italic` or `bold-italic`.</tspan>
+        </text>
+    </g>
+    <g id="events" transform="translate(0,275)">
+        <use xlink:href="#events_box" />
+        <text x="105" y="6" class="title">Events section</text>
+        <text y="7" transform="translate(2)">
+            <tspan x="0" dy="5"></tspan>
         </text>
     </g>
 </svg>
