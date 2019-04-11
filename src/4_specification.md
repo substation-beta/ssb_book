@@ -430,7 +430,15 @@ Gaussian blur on object + border. Sigma value defines strength. Horizontal and v
 With this you can use one object to mask another, making clipping and holes inside texts etc. possible.
 
 If you set target to `mask` then you will start to render on a different canvas which you are unable to see.
-On this canvas only alpha-values exist for each pixel (0-255) so no colors. If you draw 
+On this canvas only alpha-values exist for each pixel (0-255) so no colors. If you draw any shape on this hidden canvas
+with an alpha value of 255, each pixel of said shape will be "masked out" on the original canvas, meaning you will
+stance a hole into any shape at said position. If you use 125 alpha instead, the "hole" will be 50% transparent etc.
+
+You can invert this logic by setting `mask-mode` to `invert`.
+Beware that if you do this, nothing will show on screen as the hidden canvas will be all 0 per default and by
+inverting the logic everything is masked out.
+
+With using `mask-clear` you can reset the entire canvas to 0.
 
 Example:
 
