@@ -447,7 +447,9 @@ Example:
 #### blend
 `[blend=overlay]`
 
-Blending mode (see here). Following modes are available:
+Blending mode. This will set how this layer is blended with the background. A Background might also be another layer that is drawn behind this layer.
+
+Following modes are available:
 
 overlay: source color (((source alpha * source color)) + ((1 -  source alpha) * destination color))
 
