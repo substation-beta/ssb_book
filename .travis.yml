@@ -12,13 +12,10 @@ cache: cargo
 addons:
   apt:
     packages:
-      - inkscape
-      - fonts-liberation
+      - libreoffice
 
 # Execute build
-script:
-  - fc-cache
-  - cargo build --verbose
+script: cargo build --verbose
 
 # Deploy build to release platform
 deploy:
