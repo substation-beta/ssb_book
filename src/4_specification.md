@@ -37,8 +37,9 @@ Invalid sections will be ignored, so nothing happens until a valid section start
 ## INFO section
 The INFO section holds information about the script itself. Format of information chunks is...
 Type: data
-Following types are available:
-Title
+You can come up with any data yourself but here aer some examples:
+
+## Title
 Title of script. For example: Video name - Typeset or *** logo animation.
 
 ## Author
@@ -51,9 +52,11 @@ Script version. Can contain date, time, phase (alpha, beta, public, private), et
 Additional description of script. Something like the purpose, team or anything else what wasn’t written before.
 
 ## TARGET section
-The TARGET section describes the room dimension interpretation. Coordinates, 2D or 3D, outside of the room aren’t visible. Format of information chunks is...
+The TARGET section describes the room dimension interpretation. Coordinates, 2D or 3D, outside of the target aren’t visible. Format of information chunks is...
 Type: data
+
 Following types are available:
+
 ### Width
 Width of the room. Coordinates in range 0 until given width are visible. Default value is video width. If an value is defined different than the video width, rendered frame will be scaled to fit.
 
@@ -67,7 +70,7 @@ Depth of the room. Coordinates in range negative half of given depth until posit
 Viewer perspective. Can be ‘orthogonal’ or ‘perspective’. Default is ‘perspective’. In case of ‘orthogonal’, objects are nearing screen center with increasing negative depth and double size with increasing positive depth. Depth 0 means original size.
 
 ## MACROS section
-The MACROS section defines styles for use in following source blocks. Styles can be understand as macros, because that they are: source content with an identify name. Format of styles is...
+The MACROS section defines styles for use in following source blocks. Styles can be understood as macros, because that's what they are: source content with an identify name. Format of styles is...
 name: content
 Name can be a chain of characters except (obviously) : (U+3A).
 Content just shouldn’t be empty, that’s all.
@@ -86,6 +89,8 @@ Times have one of the following formats...
 #### Event Based
 `'event-tag'`
 
+You will be able to pass an array of `event-tag`s to the frame render function of SSB which will allow you to control when lines should be shown from the outside.
+
 ### template
 Template is the name of a macros defined in the MACROS section. Content of it will be inserted to the beginning of source block text.
 ### note
@@ -97,13 +102,17 @@ Text is a mix of style tags, text and shape descriptions. Everything what should
 The RESOURCE section describes all resources that will be used within the subtitle format. This includes images and fonts.
 
 ### Texture
-Texture: TEXTURE_ID, data | url, string
+Texture: TEXTURE_ID, data | url
+
+TEXTURE_ID: can be any character but must not contain comma.
+data: base64 encoded string or a url as an absolute path to the file on the file system
 
 ### Fonts
-Font: font_family, style, base64_encoded_string
+Font: font_family, style, data | url
 
-font_family: NO COMMA
+font_family: can be any character but must not contain comma.
 style: regular, bold, italic, bold-italic
+data: base64 encoded string or a url as an absolute path to the file on the file system
 
 # 4. Objects
 ## Comment
@@ -119,16 +128,18 @@ Text is the default mode of geometry rendering. Everything written in fourth cel
 `0-2:0.0|||Hello World!`
 
 ## Drawing
-Drawings have to be enabled by style tag mode. After this, text is interpreted as drawing command, consisting 2D or 3D points.
-Different types of drawings are available: from pixels over 3D bodies of triangles to simple 2D shapes.
-The drawing syntax will be likely a carbon copy of the SVG syntax for drawing shapes.
+Drawings have to be enabled by style tag mode. After this, text is interpreted as drawing command, consisting 2D points.
+Different types of drawings are available.
+The drawing syntax is almost a carbon copy of the SVG syntax for drawing shapes.
 
 # 5. Styling
 ## General
 Objects can have some style properties like color or position. These will be set by style tags which have to be inserted before object definition. This can happen in a style which assigns to objects source block or directly in text cell.
 The default style, excluding user styles or style tags, is defined as...
 
-`[font=Arial; size=20; bold=n; italic=n; underline=n; strikeout=n; encoding=1; position=0,0; direction=0; space=0; alignment=7; margin=10; mode=text; border=2; join=round; depth=0; color=FFFFFF; bordercolor=000000; alpha=FF; borderalpha=FF; texture=; texfill=0,0,1,0,1,1,0,1; blend=normal; stencil=clear; blur=0;]`
+`[font=Arial; size=20; bold=n; italic=n; underline=n; strikeout=n; encoding=1; position=0,0; direction=0; 
+space=0; alignment=7; margin=10; mode=text; border=2; join=round; depth=0; color=FFFFFF; bordercolor=000000; 
+alpha=FF; borderalpha=FF; texture=; texfill=0,0,1,0,clamp; blend=normal; target=mask; mask-mode=normal; blur=0;]`
 
 Animations, transformations and deformation aren’t static properties, so they aren’t listed above.
 Transformations are a special case, because they stack and have to be cleared by reset style tag. Animations interpolate transformations from its non-affecting identity, so an animation of a translation starts with 0/0/0.
@@ -143,7 +154,7 @@ Characters |, [ and ] are identificators for source blocks, so they can’t be u
 #### font
 `[font=Arial]`
 
-Name of font for text rendering.
+Name of font for text rendering. Defined in the resource section or coming from the operating system.
 
 #### size
 `[size=20]`
@@ -160,23 +171,25 @@ Font weight. ‘y’ for bold, ‘n’ for normal.
 #### italic
 `[italic=n]`
 
-Font style. ‘y’ for italic, ‘n’ for normal.
+Font style. ‘y’ for setting italic, ‘n’ for normal.
 
 #### underline
 `[underline=n]`
 
-Font decoration. ‘y’ for underlined, ‘n’ for normal.
+Font decoration. ‘y’ for underlining, ‘n’ for normal.
 
 #### strikeout
 `[strikeout=n]`
 
-Font decoration 2. ‘y’ for strikeouted, ‘n’ for normal.
+Font decoration 2. ‘y’ for striking out, ‘n’ for normal.
 
 ### Position
 #### position
+`[position=0,0,0]`
+
 `[position=0,0]`
 
-Position on screen. 2D or 3D coordinate possible.
+Position on screen. 2D or 3D coordinate possible. 0,0 is in the top left corner of the screen.
 
 #### alignment
 `[alignment=7]`
@@ -199,14 +212,20 @@ Two values: horizontal and vertical offset from anchor point as object width and
 `[margin-bottom=10]`
 
 `[margin-left=10]`
-Margin to screen edges.
+
+Margin to screen edges in pixel. Only affects line if no position is set.
 
 #### direction
 `[direction=LTR]`
 
-LTR, RTL, TTB, BTT
+Draws text in different directions, usually depends on the writing system (think english vs. japanese vs. hebrew). Default LTR.
 
-left-to-right, right-to-left, top-down, bottom-up
+Can be: LTR, RTL, TTB, BTT
+
+LTR = left-to-right
+RTL = right-to-left
+TTB = top-to-down
+BTT = bottom-to-top
 
 #### space
 `[space=0]`
@@ -240,7 +259,7 @@ Object rotation on room axis in degree.
 
 `[scale-z=1]`
 
-Object scale on room axis in percent.
+Object scale on room axis in percent. (1 = 100%)
 
 #### translate
 `[translate=0,0,0]`
@@ -259,17 +278,18 @@ Object translation in room in pixel.
 `[shear-x=0]`
 
 `[shear-y=0]`
+
 Object shearing in room as weight.
 
 #### matrix
 `[matrix=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]`
 
-Additional transformation matrix for object.
+You can also directly manipulate the matrix yourself, but beware that setting this may reset/overwrite translate, scale, rotate and shear. 
 
 #### reset
 `[reset]`
 
-Resets transformations in source block.
+Resets transformations in source block or in other words, resets the matrix.
 
 ### Geometry
 #### mode
@@ -299,7 +319,7 @@ Geometry type to draw. Form will be interpreted by non-style content of fourth c
 
 `[border-v=2]`
 
-Borderwidth of objects. No effect on objects with depth.
+Border width of objects.
 
 #### join
 `[join=round]`
@@ -314,7 +334,9 @@ Border and line join style. Can be ‘round’, 'butt' or ‘square’.
 #### texture
 `[texture=RESOURCE_ID]`
 
-Texture on object. Texturing enabled by a valid image file name or ‘frame’ (current video frame), disabled by an invalid value (like an empty value).
+Texture on object. Texturing enabled by a valid RESOURCE_ID referencing an image. Disabled by an invalid value (like an empty value).
+
+// TODO: Do we still want to add the possibility of using the current frame as a texture?
 
 #### texfill
 `[texfill=0,0,1,0]`
@@ -322,9 +344,22 @@ Texture on object. Texturing enabled by a valid image file name or ‘frame’ (
 `[texfill=0,0,1,0,clamp]`
 
 Texture position, size and wrapping.
-Offset: The first two numbers describe where the texture starts (as a value between 0 - 1 (0-100%))
+
+Offset: The first two numbers describe where the texture starts on the object (as a value between 0 - 1 (0-100%))
+
 Range: The two numbers after that describe how far the texture stretches in respect to the object (as a value between 0 -1 (0-100%))
-Wrapping modes: ’clamp’, ‘repeat’ and ‘mirror’. ‘clamp’ is default.
+
+Wrapping modes: ‘base’, ‘clamp’, ‘repeat’, ‘mirror’. ‘base’ is default.
+
+Wrapping modes describe what happens outside of the texture on the objects (beyond the edges of the texture).
+
+`base` means everywhere there is no texture you will have the standard filling color of the object.
+
+`clamp` means that the last pixel of the texture is repeated in the direction of the edge.
+
+`repeat` means that the texture is repeated in the direction of the edge.
+
+`mirror` means that the texture is repeated but flipped on the respective edge in the direction on the edge.
 
 ### Color
 #### color
@@ -392,6 +427,19 @@ Gaussian blur on object + border. Sigma value defines strength. Horizontal and v
 
 `[mask-clear]`
 
+With this you can use one object to mask another, making clipping and holes inside texts etc. possible.
+
+If you set target to `mask` then you will start to render on a different canvas which you are unable to see.
+On this canvas only alpha-values exist for each pixel (0-255) so no colors. If you draw any shape on this hidden canvas
+with an alpha value of 255, each pixel of said shape will be "masked out" on the original canvas, meaning you will
+stance a hole into any shape at said position. If you use 125 alpha instead, the "hole" will be 50% transparent etc.
+
+You can invert this logic by setting `mask-mode` to `invert`.
+Beware that if you do this, nothing will show on screen as the hidden canvas will be all 0 per default and by
+inverting the logic everything is masked out.
+
+With using `mask-clear` you can reset the entire canvas to 0.
+
 Example:
 
 `[target=mask;mask-mode=invert;alpha=FF;blur=5;]KREIS_SMALL[target=frame;blur=0;]KREIS`
@@ -399,7 +447,9 @@ Example:
 #### blend
 `[blend=overlay]`
 
-Blending mode (see here). Following modes are available:
+Blending mode. This will set how this layer is blended with the background. A Background might also be another layer that is drawn behind this layer.
+
+Following modes are available:
 
 overlay: source color (((source alpha * source color)) + ((1 -  source alpha) * destination color))
 
