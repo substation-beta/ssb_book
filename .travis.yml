@@ -12,7 +12,7 @@ cache: cargo
 addons:
   apt:
     packages:
-      - libreoffice
+      - libreoffice-draw
 
 # Execute build
 script: cargo build --verbose
