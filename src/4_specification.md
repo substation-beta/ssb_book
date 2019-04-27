@@ -318,6 +318,10 @@ Space between geometries. For text, horizontal space between characters and vert
 Geometry rotation on plane axis in degree.
 
 #### scale
+`[scale=1]`
+
+`[scale=1,1]`
+
 `[scale=1,1,1]`
 
 `[scale-x=1]`
@@ -618,20 +622,13 @@ This will create something akin to the following animation tag for each syllable
 Color to which the karaoke will interpolate within the given duration of the karaoke timing. For color syntax see the color tag.
 
 # 6. Examples
+
 ## Minimal
 This is an absolute minimal example.
-Informations don’t influence the render result. The destination takes video and default values. Styles are just macros, optional. Only the source is needed for an output.
+Only the EVENTS section is needed for an output.
 ```
-#SOURCE
+#EVENTS
 |1.0-5:0.0|||Boring line.|
-```
-
-## Event based example
-This is an example that shows how event based times would look like
-Informations don’t influence the render result. The destination takes video and default values. Styles are just macros, optional. Only the source is needed for an output.
-```
-#SOURCE
-|'EVENT'|||Boring line.|
 ```
 
 ## Extended
@@ -644,7 +641,7 @@ Author: Youka
 Version: 16.06.2012
 Description: First concept of a new render format.
 
-#DESTINATION
+#TARGET
 Width: 1280
 Height: 720
 Depth: 1000
@@ -655,17 +652,25 @@ Default: [bold=y]
 Mine: [bold=n;color=FF0000]
 Another: [Mine;position=100,200,-1;rotate-z=50%]I'm a
 
-#TARGET
+#EVENTS
 //0-2.0|||This line is a comment over 2 seconds!
 2.0-5:0.0|Another|Hello, i'm a note!|red,    rotated\ntext over multiple lines.
-5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape; texture=../ramen.tga]m 0 0 l 50.5 0 50.5 20.125 0 20.125
+5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape; texture=RAMEN]m 0 0 l 50.5 0 50.5 20.125 0 20.125
+10:0.0-10:50:0.0||Lets scale some text to double its size!|[animate=[500, 1000, [scale=2]]This text is getting huge
+20.0.0-21.0.0|||[font=MaterialIcon]some_circle_ligature
+'show-something'|Default||This will only be shown when the event-tag is given
+
+#RESOURCE
+Texture: RAMEN, ../ramen.tga
+// Will we support ligaturs? Pretty important for icon fonts
+Font: MaterialIcon, regular, AAEAAAAKAIAAAwAgT1MvMnwMf9s...
 ```
 
 # 7. Credits
 References:
-*	ASS specification [2]
-*	VSFilterMod - NewTags
-*	SVG
+*	[ASS specification](http://docs.aegisub.org/3.2/Main_Page/)
+*	[VSFilterMod - NewTags](https://code.google.com/archive/p/vsfiltermod/wikis/NewTags.wiki)
+*	[SVG Paths](https://www.w3.org/TR/SVG/paths.html)
 
 Thanks to...
 *   Youka
