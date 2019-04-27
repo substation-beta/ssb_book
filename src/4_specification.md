@@ -158,6 +158,7 @@ Commented source blocks differ from others by two / (U+2F) before the first cell
 Events can have some style properties like color or position. These will be set by style tags which have to be inserted before any given geometry definition e.g. text.
 A style tag effects any geometry definition which comes after the tag. The default style, excluding user styles or style tags, is defined as...
 
+// TODO: If standard alignment is 7 the default text will be at the top left corner of the screen...
 `[font=Liberation Sans; size=20; bold=n; italic=n; underline=n; strikeout=n; position=0,0,0; direction=0; 
 space=0; alignment=7; margin=10; mode=text; border=2; join=round; cap=round; color=FFFFFF; bordercolor=000000; 
 alpha=FF; borderalpha=FF; texture=; texfill=0,0,1,0,clamp; blend=normal; target=mask; mask-mode=normal; blur=0;]`
@@ -171,6 +172,28 @@ Setting a new position resets current geometry position. Following text wouldnâ€
 
 ## Escape characters
 Characters |, [ and ] are identificators for source blocks, so they canâ€™t be used in source cells directly. Add \ before these characters (and \ itself) to escape and use them as content f.e. for texts or notes.
+
+## Auto-Wrapping
+Auto-Wrapping describes the process in which text is broken down into multiple lines of text to not go outside the edge of the screen.
+
+Text will only be auto-wrapped if no `position` tag is present in the current line.
+
+//TODO: You agree with that?
+The Auto-Wrapper will try to create wrapped lines where the last line has the most text, the second-last the second most text etc. culminating in a pleasing pyramid structure.
+
+Wrapping is mostly influenced by the tags `margin`, `alignment` and `wrap-style`. It is also influenced by all tags which increase the size of the line or the characters.
+The following describes how each of these tags effects auto-wrapping. Note however that these tags do not _only_ effect auto-wrapping.
+
+### margin
+`margin` adds a border to the auto-wrapping, effectively making the screen smaller and leading to text being pushed away from the edges.
+
+### alignment
+// TODO: what does alignment in % do with auto-wrapping? 
+`alignment` puts the text at certain default positions on the screen, for example `alignment=7` would put the text on the top left corner of the screen and makes the text left-aligned
+while `alignment=2` would put the text on the bottom of the screen in the middle and would effectively center-align the text.
+
+### wrap-style
+What each wrap-style does is defined in the `wrap-style` section in the style-tags section.
 
 ## Style-Tags
 ### Font
@@ -241,6 +264,20 @@ Two values: horizontal and vertical offset from anchor point as geometry width a
 `[margin-left=10]`
 
 Margin to screen edges in pixel. Only affects line if no position is set.
+
+### wrap-style
+`[wrap-style=space]`
+
+Only has any effect if auto-wrapping is enabled.
+
+// TODO: Maybe we use this? https://docs.rs/hyphenation/0.7.1/hyphenation/
+Will wrap text according to the specified style. Can be either `space`, `character` or `hyphen`;
+
+With `space` the auto-wrapper will try to break lines at the " " character.
+
+With `character` the auto-wrapper will try to break lines at characters.
+
+With `hyphen` the auto-wrapper will try to intelligently use a dictionary to add hyphens to words in addition to breaking on spaces.
 
 #### direction
 `[direction=LTR]`
@@ -323,7 +360,7 @@ Resets transformations in source block or in other words, resets the matrix.
 
 ### Geometry
 #### mode
-Geometry type to draw. The geometry will be all text that is not written in a style-tag. Default mode is text.
+Geometry type to draw. Every character in a line that is not within squared brackets will be interpreted and rendered as geometry according to this mode.
 
 `[mode=text]`
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -332,6 +369,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 Can be one of the  following:
 
+```
 m - move (m 0 0)
 
 l - line (l 0 0 1 1)
@@ -339,6 +377,15 @@ l - line (l 0 0 1 1)
 a - arcs (a 0 0 360)
 
 b - cubic bezier (b 0 0 1 1 2 2 3 3)
+```
+
+Example of a circle: `m 0 -10 b 0 -10 -10 -10 -10 0 b -10 0 -10 10 0 10 b 0 10 10 10 10 0 b 10 0 10 -10 0 -10 `
+
+![circle shape](assets/circle.png)
+
+Example of a heart shape: `m -17 4 b -17 -4 -14 -9 -10 -9 b -4 -9 0 -2 0 -2 b 0 -2 4 -9 10 -9 b 14 -9 17 -4 17 4 b 17 13 0 22 0 22 b 0 22 -17 14 -17 4`
+
+![heart shape](assets/heart.png)
 
 `[mode=point]`
 0 0
@@ -377,7 +424,7 @@ Can be set to `@` to use the current frame of the video as a texture.
 #### texfill
 `[texfill=0,0,1,0]`
 
-`[texfill=0,0,1,0,clamp]`
+`[texfill=0,0,1,0,pad]`
 
 Texture position, size and wrapping.
 
