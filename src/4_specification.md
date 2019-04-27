@@ -116,9 +116,9 @@ Times have one of the following formats...
 #### Time Based
 `[[[hours:]minutes:]seconds.]milliseconds`
 #### Event Based
-`'event-tag'`
+`'event-id'`
 
-You will be able to pass an array of `event-tag`s to the frame render function of SSB which will allow you to control when lines should be shown from the outside.
+You will be able to pass an array of `event id`s to the frame render function of SSB which will allow you to control when lines should be shown from the outside.
 
 ### macro
 macro is the name of a macro defined in the MACROS section. Content of it will be inserted to the beginning of source block text.
@@ -131,20 +131,24 @@ Text is a mix of style tags and geometries. Everything what should be rendered i
 The RESOURCE section describes all resources that will be used within the subtitle format. This includes images and fonts.
 
 ### Texture
-Texture: TEXTURE_ID, data | url
+Texture: TEXTURE_ID,data|url,base_64_or_url 
 
 TEXTURE_ID: can be any character but must not contain comma.
 
-data: base64 encoded string or an url as an absolute path to the file on the file system.
+data|url: You need to tell if the data after this is actual data or an url
+
+base_64_or_url: base64 encoded string or an url as an absolute path to the file on the file system.
 
 ### Fonts
-Font: FONT_FAMILY, style, data | url
+Font: FONT_FAMILY,style,data|url,base_64_or_url
 
 FONT_FAMILY: can be any character but must not contain comma.
 
 style: regular, bold, italic, bold-italic
 
-data: base64 encoded string or a url as an absolute path to the file on the file system.
+data|url: You need to tell if the data after this is actual data or an url
+
+base_64_or_url: base64 encoded string or a url as an absolute path to the file on the file system.
 
 ## Comment
 Comments are source blocks which don’t display anything on render target.
@@ -158,9 +162,8 @@ Commented source blocks differ from others by two / (U+2F) before the first cell
 Events can have some style properties like color or position. These will be set by style tags which have to be inserted before any given geometry definition e.g. text.
 A style tag effects any geometry definition which comes after the tag. The default style, excluding user styles or style tags, is defined as...
 
-// TODO: If standard alignment is 7 the default text will be at the top left corner of the screen...
 `[font=Liberation Sans; size=20; bold=n; italic=n; underline=n; strikeout=n; position=0,0,0; direction=0; 
-space=0; alignment=7; margin=10; mode=text; border=2; join=round; cap=round; color=FFFFFF; bordercolor=000000; 
+space=0; alignment=2; margin=10; mode=text; border=2; join=round; cap=round; color=FFFFFF; bordercolor=000000; 
 alpha=FF; borderalpha=FF; texture=; texfill=0,0,1,0,clamp; blend=normal; target=mask; mask-mode=normal; blur=0;]`
 
 On Windows the default Font is Arial.
@@ -178,7 +181,6 @@ Auto-Wrapping describes the process in which text is broken down into multiple l
 
 Text will only be auto-wrapped if no `position` tag is present in the current line.
 
-//TODO: You agree with that?
 The Auto-Wrapper will try to create wrapped lines where the last line has the most text, the second-last the second most text etc. culminating in a pleasing pyramid structure.
 
 Wrapping is mostly influenced by the tags `margin`, `alignment` and `wrap-style`. It is also influenced by all tags which increase the size of the line or the characters.
@@ -188,7 +190,6 @@ The following describes how each of these tags effects auto-wrapping. Note howev
 `margin` adds a border to the auto-wrapping, effectively making the screen smaller and leading to text being pushed away from the edges.
 
 ### alignment
-// TODO: what does alignment in % do with auto-wrapping? 
 `alignment` puts the text at certain default positions on the screen, for example `alignment=7` would put the text on the top left corner of the screen and makes the text left-aligned
 while `alignment=2` would put the text on the bottom of the screen in the middle and would effectively center-align the text.
 
@@ -270,8 +271,7 @@ Margin to screen edges in pixel. Only affects line if no position is set.
 
 Only has any effect if auto-wrapping is enabled.
 
-// TODO: Maybe we use this? https://docs.rs/hyphenation/0.7.1/hyphenation/
-Will wrap text according to the specified style. Can be either `space`, `character` or `hyphen`;
+Will wrap text according to the specified style. Can be either `nowrap`, `space` or `character`;
 
 With `space` the auto-wrapper will try to break lines at the " " character.
 
@@ -391,7 +391,7 @@ Example of a heart shape: `m -17 4 b -17 -4 -14 -9 -10 -9 b -4 -9 0 -2 0 -2 b 0 
 
 ![heart shape](heart.png)
 
-`[mode=point]`
+`[mode=points]`
 0 0
 
 
@@ -650,20 +650,20 @@ View: perspective
 #MACROS
 Default: [bold=y]
 Mine: [bold=n;color=FF0000]
-Another: [Mine;position=100,200,-1;rotate-z=50%]I'm a
+Another: [Mine;position=100,200,-1;rotate-z=180]I'm a
 
 #EVENTS
 //0-2.0|||This line is a comment over 2 seconds!
 2.0-5:0.0|Another|Hello, i'm a note!|red,    rotated\ntext over multiple lines.
 5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape; texture=RAMEN]m 0 0 l 50.5 0 50.5 20.125 0 20.125
-10:0.0-10:50:0.0||Lets scale some text to double its size!|[animate=[500, 1000, [scale=2]]This text is getting huge
+10:0.0-10:50:0.0||${Another}Lets scale some text to double its size!|[animate=[500, 1000, [scale=2]]This text is getting huge
 20.0.0-21.0.0|||[font=MaterialIcon]some_circle_ligature
-'show-something'|Default||This will only be shown when the event-tag is given
+'show-something'|Default||This will only be shown when the event id is given
 
 #RESOURCE
-Texture: RAMEN, ../ramen.tga
+Texture: RAMEN,url,../ramen.tga
 // Will we support ligaturs? Pretty important for icon fonts
-Font: MaterialIcon, regular, AAEAAAAKAIAAAwAgT1MvMnwMf9s...
+Font: MaterialIcon,regular,data,AAEAAAAKAIAAAwAgT1MvMnwMf9s...
 ```
 
 # 7. Credits
