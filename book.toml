@@ -8,3 +8,7 @@ description = "Documentation of Substation Beta format."
 [build]
 build-dir = "target/book"
 create-missing = false
+
+[output.html]
+theme = "src/theme"
+additional-js = ["clipboard.min.js", "custom.js"]

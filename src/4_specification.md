@@ -108,17 +108,23 @@ Content just shouldn’t be empty, that’s all.
 The EVENTS section describes what to render at all. Every source block tells the renderer: “when render what”.
 Format of source blocks is...
 
-`start-end|macro|note|text`
+```
+start-end | macro | note | text
+```
 
 ### start-end
 Start and end are the times when to start and end rendering.
 Times have one of the following formats...
 #### Time Based
-`[[[hours:]minutes:]seconds.]milliseconds`
+```
+[[[hours:]minutes:]seconds.]milliseconds
+```
 #### Event Based
-`'event-id'`
+```
+'event-id'
+```
 
-You will be able to pass an array of `event id`s to the frame render function of SSB which will allow you to control when lines should be shown from the outside.
+You will be able to pass an array of **event-id**'s to the frame render function of SSB which will allow you to control when lines should be shown from the outside.
 
 ### macro
 macro is the name of a macro defined in the MACROS section. Content of it will be inserted to the beginning of source block text.
@@ -155,16 +161,18 @@ Comments are source blocks which don’t display anything on render target.
 They can contain line information, like time, style, note and text, so they can be used as backups or multiline notes.
 Commented source blocks differ from others by two / (U+2F) before the first cell.
 
-`//0-2:0.0|||Nothing to see.`
+```
+//0-2:0.0|||Nothing to see.
+```
 
 # 3. Styling
 ## General
 Events can have some style properties like color or position. These will be set by style tags which have to be inserted before any given geometry definition e.g. text.
 A style tag effects any geometry definition which comes after the tag. The default style, excluding user styles or style tags, is defined as...
 
-`[font=Liberation Sans; size=20; bold=n; italic=n; underline=n; strikeout=n; position=0,0,0; direction=0; 
-space=0; alignment=2; margin=10; mode=text; border=2; join=round; cap=round; color=FFFFFF; bordercolor=000000; 
-alpha=FF; borderalpha=FF; texture=; texfill=0,0,1,0,clamp; blend=normal; target=mask; mask-mode=normal; blur=0;]`
+```wrap
+[font=Liberation Sans; size=20; bold=n; italic=n; underline=n; strikeout=n; position=0,0,0; direction=0;space=0; alignment=2; margin=10; mode=text; border=2; join=round; cap=round; color=FFFFFF; bordercolor=000000; alpha=FF; borderalpha=FF; texture=;texfill=0,0,1,0,clamp; blend=normal; target=mask; mask-mode=normal; blur=0;]
+```
 
 On Windows the default Font is Arial.
 
@@ -179,32 +187,36 @@ Characters |, [ and ] are identificators for source blocks, so they can’t be u
 ## Auto-Wrapping
 Auto-Wrapping describes the process in which text is broken down into multiple lines of text to not go outside the edge of the screen.
 
-Text will only be auto-wrapped if no `position` tag is present in the current line.
+Text will only be auto-wrapped if no **position** tag is present in the current line.
 
 The Auto-Wrapper will try to create wrapped lines where the last line has the most text, the second-last the second most text etc. culminating in a pleasing pyramid structure.
 
-Wrapping is mostly influenced by the tags `margin`, `alignment` and `wrap-style`. It is also influenced by all tags which increase the size of the line or the characters.
+Wrapping is mostly influenced by the tags **margin**, **alignment** and **wrap-style**. It is also influenced by all tags which increase the size of the line or the characters.
 The following describes how each of these tags effects auto-wrapping. Note however that these tags do not _only_ effect auto-wrapping.
 
 ### margin
-`margin` adds a border to the auto-wrapping, effectively making the screen smaller and leading to text being pushed away from the edges.
+**margin** adds a border to the auto-wrapping, effectively making the screen smaller and leading to text being pushed away from the edges.
 
 ### alignment
-`alignment` puts the text at certain default positions on the screen, for example `alignment=7` would put the text on the top left corner of the screen and makes the text left-aligned
-while `alignment=2` would put the text on the bottom of the screen in the middle and would effectively center-align the text.
+**alignment** puts the text at certain default positions on the screen, for example **alignment=7** would put the text on the top left corner of the screen and makes the text left-aligned
+while **alignment=2** would put the text on the bottom of the screen in the middle and would effectively center-align the text.
 
 ### wrap-style
-What each wrap-style does is defined in the `wrap-style` section in the style-tags section.
+What each wrap-style does is defined in the **wrap-style** section in the style-tags section.
 
 ## Style-Tags
 ### Font
 #### font
-`[font=Liberation Sans]`
+```
+[font=Liberation Sans]
+```
 
 Name of font for text rendering. Defined in the resource section or coming from the operating system.
 
 #### size
-`[size=20]`
+```
+[size=20]
+```
 
 In text mode: size of font in pixel.
 
@@ -213,37 +225,47 @@ In point mode: point range in pixel.
 In shape mode: no effect.
 
 #### bold
-`[bold=n]`
+```
+[bold=n]
+```
 
 Font weight. ‘y’ for bold, ‘n’ for normal.
 
 #### italic
-`[italic=n]`
+```
+[italic=n]
+```
 
 Font style. ‘y’ for setting italic, ‘n’ for normal.
 
 #### underline
-`[underline=n]`
+```
+[underline=n]
+```
 
 Font decoration. ‘y’ for underlining, ‘n’ for normal.
 
 #### strikeout
-`[strikeout=n]`
+```
+[strikeout=n]
+```
 
 Font decoration 2. ‘y’ for striking out, ‘n’ for normal.
 
 ### Position
 #### position
-`[position=0,0,0]`
-
-`[position=0,0]`
+```
+[position=0,0,0]
+[position=0,0]
+```
 
 Position on screen. 2D or 3D coordinate possible. 0,0 is in the top left corner of the screen.
 
 #### alignment
-`[alignment=7]`
-
-`[alignment=0,0]`
+```
+[alignment=7]
+[alignment=0,0]
+```
 
 Alignment of geometry at position point.
 
@@ -252,35 +274,36 @@ One value: see keyboard numpad for anchor point definition.
 Two values: horizontal and vertical offset from anchor point as geometry width and height in percent.
 
 #### margin
-`[margin=10]`
-
-`[margin=10,10,10,10]`
-
-`[margin-top=10]`
-
-`[margin-right=10]`
-
-`[margin-bottom=10]`
-
-`[margin-left=10]`
+```
+[margin=10]
+[margin=10,10,10,10]
+[margin-top=10]
+[margin-right=10]
+[margin-bottom=10]
+[margin-left=10]
+```
 
 Margin to screen edges in pixel. Only affects line if no position is set.
 
 ### wrap-style
-`[wrap-style=space]`
+```
+[wrap-style=space]
+```
 
 Only has any effect if auto-wrapping is enabled.
 
-Will wrap text according to the specified style. Can be either `nowrap`, `space` or `character`;
+Will wrap text according to the specified style. Can be either **nowrap**, **space** or **character**;
 
-With `space` the auto-wrapper will try to break lines at the " " character.
+With **space** the auto-wrapper will try to break lines at the " " character.
 
-With `character` the auto-wrapper will try to break lines at characters.
+With **character** the auto-wrapper will try to break lines at characters.
 
-With `hyphen` the auto-wrapper will try to intelligently use a dictionary to add hyphens to words in addition to breaking on spaces.
+With **hyphen** the auto-wrapper will try to intelligently use a dictionary to add hyphens to words in addition to breaking on spaces.
 
 #### direction
-`[direction=LTR]`
+```
+[direction=LTR]
+```
 
 Draws text in different directions, usually depends on the writing system (think english vs. japanese vs. hebrew). Default is LTR.
 
@@ -295,70 +318,68 @@ TTB = top-to-down
 BTT = bottom-to-top
 
 #### space
-`[space=0]`
-
-`[space=0,0]`
-
-`[space-h=0]`
-
-`[space-v=0]`
+```
+[space=0]
+[space=0,0]
+[space-h=0]
+[space-v=0]
+```
 
 Space between geometries. For text, horizontal space between characters and vertical space between lines are defined too.
 
 ### Transformation
 #### rotate
-`[rotate=0,0,0]`
-
-`[rotate-x=0]`
-
-`[rotate-y=0]`
-
-`[rotate-z=0]`
+```
+[rotate=0,0,0]
+[rotate-x=0]
+[rotate-y=0]
+[rotate-z=0]
+```
 
 Geometry rotation on plane axis in degree.
 
 #### scale
-`[scale=1]`
-
-`[scale=1,1]`
-
-`[scale=1,1,1]`
-
-`[scale-x=1]`
-
-`[scale-y=1]`
-
-`[scale-z=1]`
+```
+[scale=1]
+[scale=1,1]
+[scale=1,1,1]
+[scale-x=1]
+[scale-y=1]
+[scale-z=1]
+```
 
 Geometry scale on plane axis in percent. (1 = 100%)
 
 #### translate
-`[translate=0,0,0]`
-
-`[translate-x=0]`
-
-`[translate-y=0]`
-
-`[translate-z=0]`
+```
+[translate=0,0,0]
+[translate-x=0]
+[translate-y=0]
+[translate-z=0]
+```
 
 Geometry translation on plane in pixel.
 
 #### shear
-`[shear=0,0]`
-
-`[shear-x=0]`
-
-`[shear-y=0]`
+```
+[shear=0,0]
+[shear-x=0]
+[shear-y=0]
+```
 
 Geometry shearing on plane as weight.
 
 #### matrix
-`[matrix=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]`
+```
+[matrix=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
+```
 
 You can also directly manipulate the matrix yourself, but beware that setting this may reset/overwrite translate, scale, rotate and shear. 
 
 #### reset
-`[reset]`
+```
+[reset]
+```
 
 Resets transformations in source block or in other words, resets the matrix.
 
@@ -366,10 +387,14 @@ Resets transformations in source block or in other words, resets the matrix.
 #### mode
 Geometry type to draw. Every character in a line that is not within squared brackets will be interpreted and rendered as geometry according to this mode.
 
-`[mode=text]`
+```
+[mode=text]
+```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-`[mode=shape]`
+```
+[mode=shape]
+```
 
 Can be one of the  following:
 
@@ -383,52 +408,71 @@ a - arcs (a 0 0 360)
 b - cubic bezier (b 0 0 1 1 2 2 3 3)
 ```
 
-Example of a circle: `m 0 -10 b 0 -10 -10 -10 -10 0 b -10 0 -10 10 0 10 b 0 10 10 10 10 0 b 10 0 10 -10 0 -10 `
+Example of a circle: 
+```html
+m 0 -10 b 0 -10 -10 -10 -10 0 b -10 0 -10 10 0 10 b 0 10 10 10 10 0 b 10 0 10 -10 0 -10
+```
 
 ![circle shape](circle.png)
 
-Example of a heart shape: `m -17 4 b -17 -4 -14 -9 -10 -9 b -4 -9 0 -2 0 -2 b 0 -2 4 -9 10 -9 b 14 -9 17 -4 17 4 b 17 13 0 22 0 22 b 0 22 -17 14 -17 4`
+Example of a heart shape: 
+```html
+m -17 4 b -17 -4 -14 -9 -10 -9 b -4 -9 0 -2 0 -2 b 0 -2 4 -9 10 -9 b 14 -9 17 -4 17 4 b 17 13 0 22 0 22 b 0 22 -17 14 -17 4
+```
 
 ![heart shape](heart.png)
 
-`[mode=points]`
+```
+[mode=points]
+```
 0 0
+
+TODO: Better example, add picture
 
 
 #### border
-`[border=2]`
-
-`[border=2,2]`
-
-`[border-h=2]`
-
-`[border-v=2]`
+```
+[border=2]
+[border=2,2]
+[border-h=2]
+[border-v=2]
+```
 
 Border width of geometry.
 
 #### join
-`[join=round]`
+```
+[join=round]
+```
 
 Border and line join style. Can be ‘round’, ‘bevel’ or ‘miter’.
 
 #### cap
-`[cap=round]`
+```
+[cap=round]
+```
 
 Border and line cap style. Can be ‘round’, 'butt' or ‘square’.
 
 ### Textures
 
 #### texture
-`[texture=RESOURCE_ID]`
+```
+[texture=RESOURCE_ID]
+```
 
 Texture on geometry. Texturing enabled by a valid RESOURCE_ID referencing an image. Disabled by an invalid value (like an empty value).
 
 Can be set to `@` to use the current frame of the video as a texture.
 
 #### texfill
-`[texfill=0,0,1,0]`
+```
+[texfill=0,0,1,0]
+```
 
-`[texfill=0,0,1,0,pad]`
+```
+[texfill=0,0,1,0,pad]
+```
 
 Texture position, size and wrapping.
 
@@ -436,7 +480,7 @@ Offset: The first two numbers describe where the texture starts on the geometry 
 
 Range: The two numbers after that describe how far the texture stretches in respect to the geometry (as a value between 0 -1 (0-100%)).
 
-Wrapping modes: ‘pad’, ‘clamp’, ‘repeat’, ‘mirror’. ‘pad’ is default.
+Wrapping modes: `pad`, `clamp`, `repeat`, `mirror`. `pad` is default.
 
 Wrapping modes describe what happens outside of the texture on the geometries (beyond the edges of the texture).
 
