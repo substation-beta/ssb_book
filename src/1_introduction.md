@@ -1,3 +1,3 @@
 # Introduction
 
-![Logo](logo.png)
+![Logo](../assets/img/logo.png)

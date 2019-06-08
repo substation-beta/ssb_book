@@ -413,14 +413,14 @@ Example of a circle:
 m 0 -10 b 0 -10 -10 -10 -10 0 b -10 0 -10 10 0 10 b 0 10 10 10 10 0 b 10 0 10 -10 0 -10
 ```
 
-![circle shape](circle.png)
+![circle shape](assets/img/circle.png)
 
 Example of a heart shape: 
 ```html
 m -17 4 b -17 -4 -14 -9 -10 -9 b -4 -9 0 -2 0 -2 b 0 -2 4 -9 10 -9 b 14 -9 17 -4 17 4 b 17 13 0 22 0 22 b 0 22 -17 14 -17 4
 ```
 
-![heart shape](heart.png)
+![heart shape](assets/img/heart.png)
 
 ```
 [mode=points]

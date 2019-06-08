@@ -8,14 +8,13 @@ rust: stable
 # Cache build dependencies
 cache: cargo
 
-# System dependencies
-addons:
-  apt:
-    packages:
-      - libreoffice-draw
-
 # Execute build
-script: cargo build --verbose
+script:
+  - cargo build --verbose
+  - cp assets/ssb_reference_card.pdf target/book/
+  - mkdir -p target/book/assets
+  - mkdir -p target/book/assets/img
+  - cp assets/img/* target/book/assets/img
 
 # Deploy build to release platform
 deploy:
