@@ -1,9 +1,4 @@
 use mdbook::MDBook;
-use std::{
-    process::Command,
-    thread::sleep,
-    time::Duration
-};
 
 fn main() {
     // Compile book

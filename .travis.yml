@@ -12,7 +12,6 @@ cache: cargo
 script:
   - cargo build --verbose
   - cp assets/ssb_reference_card.pdf target/book/
-  - mkdir -p target/book/assets
   - mkdir -p target/book/assets/img
   - cp assets/img/* target/book/assets/img
 

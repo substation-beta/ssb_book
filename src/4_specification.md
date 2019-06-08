@@ -171,7 +171,7 @@ Events can have some style properties like color or position. These will be set 
 A style tag effects any geometry definition which comes after the tag. The default style, excluding user styles or style tags, is defined as...
 
 ```wrap
-[font=Liberation Sans; size=20; bold=n; italic=n; underline=n; strikeout=n; position=0,0,0; direction=0;space=0; alignment=2; margin=10; mode=text; border=2; join=round; cap=round; color=FFFFFF; bordercolor=000000; alpha=FF; borderalpha=FF; texture=;texfill=0,0,1,0,clamp; blend=normal; target=mask; mask-mode=normal; blur=0;]
+[font=Liberation Sans;size=20;bold=n;italic=n;underline=n;strikeout=n;position=0,0,0;direction=0;space=0;alignment=2;margin=10;mode=text;border=2;join=round;cap=round;color=FFFFFF;bordercolor=000000;alpha=FF;borderalpha=FF;texture=;texfill=0,0,1,0,clamp;blend=normal;target=mask;mask-mode=normal;blur=0]
 ```
 
 On Windows the default Font is Arial.
