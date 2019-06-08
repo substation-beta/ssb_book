@@ -463,14 +463,11 @@ Border and line cap style. Can be ‘round’, 'butt' or ‘square’.
 
 Texture on geometry. Texturing enabled by a valid RESOURCE_ID referencing an image. Disabled by an invalid value (like an empty value).
 
-Can be set to `@` to use the current frame of the video as a texture.
+Can be set to **@** to use the current frame of the video as a texture.
 
 #### texfill
 ```
 [texfill=0,0,1,0]
-```
-
-```
 [texfill=0,0,1,0,pad]
 ```
 
@@ -480,103 +477,92 @@ Offset: The first two numbers describe where the texture starts on the geometry 
 
 Range: The two numbers after that describe how far the texture stretches in respect to the geometry (as a value between 0 -1 (0-100%)).
 
-Wrapping modes: `pad`, `clamp`, `repeat`, `mirror`. `pad` is default.
+Wrapping modes: **pad**, **clamp**, **repeat**, **mirror**. **pad** is default.
 
 Wrapping modes describe what happens outside of the texture on the geometries (beyond the edges of the texture).
 
-`pad` means everywhere there is no texture you will have the standard filling color of the geometry.
+**pad** means everywhere there is no texture you will have the standard filling color of the geometry.
 
-`clamp` means that the last pixel of the texture is repeated in the direction of the edge.
+**clamp** means that the last pixel of the texture is repeated in the direction of the edge.
 
-`repeat` means that the texture is repeated in the direction of the edge.
+**repeat** means that the texture is repeated in the direction of the edge.
 
-`mirror` means that the texture is repeated but flipped on the respective edge in the direction on the edge.
+**mirror** means that the texture is repeated but flipped on the respective edge in the direction on the edge.
 
 ### Color
 #### color
-`[color=FFFFFF]`
-
-`[color=FFFFFF,FFFFFF]`
-
-`[color=FFFFFF,FFFFFF,FFFFFF]`
-
-`[color=FFFFFF,FFFFFF,FFFFFF,FFFFFF]`
-
-`[color=FFFFFF,FFFFFF,FFFFFF,FFFFFF,FFFFFF]`
-
-`[bordercolor=000000]`
-
-`[bordercolor=000000,000000]`
-
-`[bordercolor=000000,000000,000000]`
-
-`[bordercolor=000000,000000,000000,000000]`
-
-`[bordercolor=000000,000000,000000,000000,000000]`
+```
+[color=FFFFFF]
+[color=FFFFFF,FFFFFF]
+[color=FFFFFF,FFFFFF,FFFFFF]
+[color=FFFFFF,FFFFFF,FFFFFF,FFFFFF]
+[color=FFFFFF,FFFFFF,FFFFFF,FFFFFF,FFFFFF]
+[bordercolor=000000]
+[bordercolor=000000,000000]
+[bordercolor=000000,000000,000000]
+[bordercolor=000000,000000,000000,000000]
+[bordercolor=000000,000000,000000,000000,000000]
+```
 
 Color for geometry or his border. Can be mono, left-to-right gradient, left-to-mid-to-right gradient, 4-corners gradient or 4-corners + center gradient. Color definition in hexadecimal (RGB).
 
 #### alpha
-`[alpha=FF]`
-
-`[alpha=FF,FF]`
-
-`[alpha=FF,FF,FF,FF]`
-
-`[alpha=FF,FF,FF,FF,FF]`
-
-`[borderalpha=FF]`
-
-`[borderalpha=FF,FF]`
-
-`[borderalpha=FF,FF,FF,FF]`
-
-`[borderalpha=FF,FF,FF,FF,FF]`
+```
+[alpha=FF]
+[alpha=FF,FF]
+[alpha=FF,FF,FF,FF]
+[alpha=FF,FF,FF,FF,FF]
+[borderalpha=FF]
+[borderalpha=FF,FF]
+[borderalpha=FF,FF,FF,FF]
+[borderalpha=FF,FF,FF,FF,FF]
+```
 
 Transparency for geometry or his border. Can be mono, left-to-right gradient, left-to-mid-to-right gradient, 4-corners gradient or 4-corners + center gradient. Value in hexadecimal (00 = invisible, FF = opaque).
 
 #### blur
-`[blur=0]`
-
-`[blur=0,0]`
-
-`[blur-h=0]`
-
-`[blur-v=0]`
+```
+[blur=0]
+[blur=0,0]
+[blur-h=0]
+[blur-v=0]
+```
 
 Gaussian blur on geometry + border. Sigma value defines strength. Horizontal and vertical blur available.
 
 ### Rastering
 #### mask
-`[target=mask]`
-
-`[target=frame]`
-
-`[mask-mode=normal]`
-
-`[mask-mode=invert]`
-
-`[mask-clear]`
+```
+[target=mask]
+[target=frame]
+[mask-mode=normal]
+[mask-mode=invert]
+[mask-clear]
+```
 
 With this you can use one geometry to mask another, making clipping and holes inside texts etc. possible.
 
-If you set target to `mask` then you will start to render on a different canvas which you are unable to see.
+If you set target to **mask** then you will start to render on a different canvas which you are unable to see.
 On this canvas (back buffer) only alpha values exist for each pixel (0-255) so no colors. If you draw any shape on this hidden canvas
 with an alpha value of 255, each pixel of said shape will be "masked out" on the original canvas, meaning you will
 stance a hole into any shape at said position. If you use 127 alpha instead, the "hole" will be 50% transparent etc.
 
-You can invert this logic by setting `mask-mode` to `invert`.
+You can invert this logic by setting **mask-mode** to **invert**.
 Beware that if you do this, nothing will show on screen as the hidden canvas will be all 0 per default and by
 inverting the logic everything is masked out.
 
-With using `mask-clear` you can reset the entire canvas to 0.
+With using **mask-clear** you can reset the entire canvas to 0.
 
 Example:
 
-`[target=mask;mask-mode=invert;alpha=FF;blur=5;]CIRCLE_SMALL[target=frame;blur=0;]CIRCLE`
+```
+[target=mask;mask-mode=invert;alpha=FF;blur=5;]CIRCLE_SMALL[target=frame;blur=0;]CIRCLE
+```
 
 #### blend
-`[blend=overlay]`
+```
+[blend=overlay]
+```
 
 Blending mode. This will set how this geometry is blended with the background.
 
@@ -599,15 +585,13 @@ screen: 1 - (1 - source color) * (1 - destination color)
 
 ### Animation
 #### animate
-`[animate=[color=000000;translate-x=20]]`
-
-`[animate=t,[color=000000;translate-x=20]]`
-
-`[animate=0,1000,[color=000000;translate-x=20]]`
-
-`[animate=500,1000,[color=000000;translate-x=-20]]`
-
-`[animate=0,1000,sin(t*pi),[color=000000;translate-x=20]]`
+```
+[animate=[color=000000;translate-x=20]]
+[animate=t,[color=000000;translate-x=20]]
+[animate=0,1000,[color=000000;translate-x=20]]
+[animate=500,1000,[color=000000;translate-x=-20]]
+[animate=0,1000,sin(t*pi),[color=000000;translate-x=20]]
+```
 
 Interpolates style properties over time.
 
@@ -647,21 +631,29 @@ Style tags to interpolate.
 The standard karaoke effect will be an interpolation from "color" to "kcolor" in the given k duration.
 
 #### k
-`[k=100]`
+```
+[k=100]
+```
 
 Karaoke duration in milliseconds.
 
 #### kset
-`[kset=0]`
+```
+[kset=0]
+```
 
 Reset karaoke time in milliseconds to start time of event.
 
 #### kcolor
-`[kcolor=FF00FF]`
+```
+[kcolor=FF00FF]
+```
 
 This will create something akin to the following animation tag for each syllable:
 
-`[animate=kStart,kEnd,t^0.5,[color=FF00FF]]`
+```
+[animate=kStart,kEnd,t^0.5,[color=FF00FF]]
+```
 
 Color to which the karaoke will interpolate within the given duration of the karaoke timing. For color syntax see the color tag.
 
