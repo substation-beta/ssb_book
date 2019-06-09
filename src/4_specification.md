@@ -171,7 +171,7 @@ Events can have some style properties like color or position. These will be set 
 A style tag effects any geometry definition which comes after the tag. The default style, excluding user styles or style tags, is defined as...
 
 ```wrap
-[font=Liberation Sans;size=20;bold=n;italic=n;underline=n;strikeout=n;position=0,0,0;direction=0;space=0;alignment=2;margin=10;mode=text;border=2;join=round;cap=round;color=FFFFFF;bordercolor=000000;alpha=FF;borderalpha=FF;texture=;texfill=0,0,1,0,clamp;blend=normal;target=mask;mask-mode=normal;blur=0]
+[font=Liberation Sans;size=20;bold=n;italic=n;underline=n;strikeout=n;position=0,0,0;direction=ltr;space=0;alignment=2;margin=10;mode=text;border=2;join=round;cap=round;color=FFFFFF;bordercolor=000000;alpha=FF;borderalpha=FF;texture=;texfill=0,0,1,0,clamp;blend=normal;target=mask;mask-mode=normal;blur=0]
 ```
 
 On Windows the default Font is Arial.
@@ -302,20 +302,20 @@ With **hyphen** the auto-wrapper will try to intelligently use a dictionary to a
 
 #### direction
 ```
-[direction=LTR]
+[direction=ltr]
 ```
 
 Draws text in different directions, usually depends on the writing system (think english vs. japanese vs. hebrew). Default is LTR.
 
-Can be: LTR, RTL, TTB, BTT
+Can be: ltr, rtl, ttb, btt
 
-LTR = left-to-right
+ltr = left-to-right
 
-RTL = right-to-left
+rtl = right-to-left
 
-TTB = top-to-down
+ttb = top-to-down
 
-BTT = bottom-to-top
+btt = bottom-to-top
 
 #### space
 ```

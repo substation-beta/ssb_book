@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.graphics">
- <office:meta><meta:creation-date>2017-10-20T23:41:36.093000000</meta:creation-date><meta:generator>LibreOffice/5.3.7.2$Windows_X86_64 LibreOffice_project/6b8ed514a9f8b44d37a1b96673cbbdd077e24059</meta:generator><meta:editing-cycles>118</meta:editing-cycles><meta:editing-duration>PT2H53M50S</meta:editing-duration><meta:keyword>ssb</meta:keyword><meta:keyword>reference</meta:keyword><meta:keyword>card</meta:keyword><meta:keyword>subtitle</meta:keyword><meta:keyword>format</meta:keyword><meta:keyword>documentation</meta:keyword><dc:subject>Short description for ssb subtitle format.</dc:subject><dc:title>SSB reference card</dc:title><dc:date>2019-04-27T21:19:10.456000000</dc:date><meta:document-statistic meta:object-count="13"/></office:meta>
+ <office:meta><meta:creation-date>2017-10-20T23:41:36.093000000</meta:creation-date><meta:generator>LibreOffice/5.3.7.2$Windows_X86_64 LibreOffice_project/6b8ed514a9f8b44d37a1b96673cbbdd077e24059</meta:generator><meta:editing-cycles>119</meta:editing-cycles><meta:editing-duration>PT2H54M16S</meta:editing-duration><meta:keyword>ssb</meta:keyword><meta:keyword>reference</meta:keyword><meta:keyword>card</meta:keyword><meta:keyword>subtitle</meta:keyword><meta:keyword>format</meta:keyword><meta:keyword>documentation</meta:keyword><dc:subject>Short description for ssb subtitle format.</dc:subject><dc:title>SSB reference card</dc:title><dc:date>2019-06-09T11:46:38.930000000</dc:date><meta:document-statistic meta:object-count="13"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="VisibleAreaTop" config:type="int">15366</config:config-item>
-   <config:config-item config:name="VisibleAreaLeft" config:type="int">-1577</config:config-item>
+   <config:config-item config:name="VisibleAreaTop" config:type="int">6869</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">-1408</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">23846</config:config-item>
    <config:config-item config:name="VisibleAreaHeight" config:type="int">14535</config:config-item>
    <config:config-item-map-indexed config:name="Views">
@@ -29,16 +29,16 @@
      <config:config-item config:name="NoColors" config:type="boolean">true</config:config-item>
      <config:config-item config:name="RulerIsVisible" config:type="boolean">false</config:config-item>
      <config:config-item config:name="PageKind" config:type="short">0</config:config-item>
-     <config:config-item config:name="SelectedPage" config:type="short">0</config:config-item>
+     <config:config-item config:name="SelectedPage" config:type="short">2</config:config-item>
      <config:config-item config:name="IsLayerMode" config:type="boolean">true</config:config-item>
      <config:config-item config:name="IsDoubleClickTextEdit" config:type="boolean">true</config:config-item>
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleAreaTop" config:type="int">15366</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-1577</config:config-item>
-     <config:config-item config:name="VisibleAreaWidth" config:type="int">23847</config:config-item>
-     <config:config-item config:name="VisibleAreaHeight" config:type="int">15198</config:config-item>
+     <config:config-item config:name="VisibleAreaTop" config:type="int">7191</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-1408</config:config-item>
+     <config:config-item config:name="VisibleAreaWidth" config:type="int">23576</config:config-item>
+     <config:config-item config:name="VisibleAreaHeight" config:type="int">14570</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">1000</config:config-item>
      <config:config-item config:name="GridCoarseHeight" config:type="int">1000</config:config-item>
      <config:config-item config:name="GridFineWidth" config:type="int">100</config:config-item>
@@ -468,28 +468,19 @@
    <style:paragraph-properties fo:text-align="center"/>
   </style:style>
   <style:style style:name="P10" style:family="paragraph">
-   <style:text-properties style:font-name="Open Sans" fo:font-size="10pt" style:font-size-complex="18pt"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph">
    <loext:graphic-properties draw:fill="solid" draw:fill-color="#ffd8ce"/>
    <style:paragraph-properties fo:text-align="center"/>
   </style:style>
+  <style:style style:name="P11" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="0.2cm" fo:margin-right="0cm" fo:text-indent="0cm"/>
+  </style:style>
   <style:style style:name="P12" style:family="paragraph">
-   <style:text-properties style:font-name="Open Sans" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0.2cm" fo:margin-right="0cm" fo:text-indent="0cm"/>
-   <style:text-properties style:font-name="Open Sans" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+   <style:paragraph-properties style:text-autospace="none"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:font-name="Open Sans" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph">
-   <style:paragraph-properties style:text-autospace="none"/>
-   <style:text-properties fo:color="#c3cee3" style:font-name="Fira Code" fo:font-size="9pt" style:font-name-asian="Fira Code" style:font-size-asian="9pt" style:font-name-complex="Fira Code" style:font-size-complex="9pt"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph">
    <loext:graphic-properties draw:fill="solid" draw:fill-color="#eeeeee"/>
    <style:paragraph-properties fo:text-align="center"/>
   </style:style>
@@ -530,10 +521,10 @@
    <style:text-properties fo:font-size="10pt" fo:font-style="italic" fo:font-weight="normal" style:font-size-asian="10pt" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-style-complex="italic" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T13" style:family="text">
-   <style:text-properties fo:font-weight="bold" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties style:font-name="Open Sans" fo:font-size="10pt" fo:font-weight="bold" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T14" style:family="text">
-   <style:text-properties style:font-size-asian="12pt"/>
+   <style:text-properties style:font-name="Open Sans" fo:font-size="10pt" style:font-size-asian="12pt" style:font-size-complex="18pt"/>
   </style:style>
   <style:style style:name="T15" style:family="text">
    <style:text-properties style:font-name="Open Sans" fo:font-size="8pt" fo:font-weight="normal" style:font-size-asian="8pt" style:font-weight-asian="normal" style:font-size-complex="8pt" style:font-weight-complex="normal"/>
@@ -816,65 +807,65 @@
       <table:table-column table:style-name="co3"/>
       <table:table-row table:style-name="ro1">
        <table:table-cell table:style-name="ce1">
-        <text:p text:style-name="P10"><text:span text:style-name="T13">Type</text:span></text:p>
+        <text:p><text:span text:style-name="T13">Type</text:span></text:p>
        </table:table-cell>
        <table:table-cell table:style-name="ce2">
-        <text:p text:style-name="P10"><text:span text:style-name="T13">Specifier</text:span></text:p>
+        <text:p><text:span text:style-name="T13">Specifier</text:span></text:p>
        </table:table-cell>
        <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P10"><text:span text:style-name="T13">Values per segment</text:span></text:p>
+        <text:p><text:span text:style-name="T13">Values per segment</text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
        <table:table-cell table:style-name="ce4">
-        <text:p text:style-name="P10"><text:span text:style-name="T14">Movement</text:span></text:p>
+        <text:p><text:span text:style-name="T14">Movement</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">m</text:span></text:p>
+        <text:p><text:span text:style-name="T14">m</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">1 target point</text:span></text:p>
-       </table:table-cell>
-      </table:table-row>
-      <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
-       <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">Line</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">l</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">1 end point</text:span></text:p>
+        <text:p><text:span text:style-name="T14">1 target point</text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">Bezier curve</text:span></text:p>
+        <text:p><text:span text:style-name="T14">Line</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">b</text:span></text:p>
+        <text:p><text:span text:style-name="T14">l</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">2 controls points + 1 end point</text:span></text:p>
-       </table:table-cell>
-      </table:table-row>
-      <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
-       <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">Arc</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">a</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">1 control point + 1 number as degree</text:span></text:p>
+        <text:p><text:span text:style-name="T14">1 end point</text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">Close</text:span></text:p>
+        <text:p><text:span text:style-name="T14">Bezier curve</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P10"><text:span text:style-name="T14">c</text:span></text:p>
+        <text:p><text:span text:style-name="T14">b</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell>
+        <text:p><text:span text:style-name="T14">2 controls points + 1 end point</text:span></text:p>
+       </table:table-cell>
+      </table:table-row>
+      <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
+       <table:table-cell>
+        <text:p><text:span text:style-name="T14">Arc</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell>
+        <text:p><text:span text:style-name="T14">a</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell>
+        <text:p><text:span text:style-name="T14">1 control point + 1 number as degree</text:span></text:p>
+       </table:table-cell>
+      </table:table-row>
+      <table:table-row table:style-name="ro1" table:default-cell-style-name="ce5">
+       <table:table-cell>
+        <text:p><text:span text:style-name="T14">Close</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell>
+        <text:p><text:span text:style-name="T14">c</text:span></text:p>
        </table:table-cell>
        <table:table-cell/>
       </table:table-row>
@@ -883,7 +874,7 @@
        FgAAMwIAAIkAAQAhAAAAAQAbAAAADQC1/v//Z7H//wEAAAABAAAAAQAAAAEAAAAAlgABAAIA
        AAAJAIUAAQAFAAAAs7OzAAGEAAEABQAAAAAAAAAAbwACAC4AAAABAAUATAEAAJpOAACNDQAA
        mk4AAI0NAABmUgAATAEAAGZSAABMAQAAmk4AAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hB
-       UEVfQkVHSU4AAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAABgAQAA//8A
+       UEVfQkVHSU4AAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAABhAQAA//8A
        AAIACAAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYA
        AQAEAAAAAAAAAHEAAgA2AAAARgIAAJVQAAAEAAAAVAB5AHAAZQAAAAQABAAAAMsAAACSAQAA
        cwIAAEIDAAAEAFQAeQBwAGUAAAIBABMAAAAJAFhURVhUX0VPQwAAAAAAAAAAAAIBABMAAAAJ
@@ -892,7 +883,7 @@
        AFhURVhUX0VPUAAAAAAAAAAAAAIBAB4AAAAUAFhURVhUX1BBSU5UU0hBUEVfRU5EAAAAAAAA
        AACFAAEABQAAALOzswABhAABAAUAAAAAAAAAAG8AAgAuAAAAAQAFAI0NAACaTgAAZxcAAJpO
        AABnFwAAZlIAAI0NAABmUgAAjQ0AAJpOAAAAAAACAQAgAAAAFgBYVEVYVF9QQUlOVFNIQVBF
-       X0JFR0lOAAAAAAAAAACKAAEAOwAAAAMANQAAAAkAT3BlbiBTYW5zAAAAAAAAYAEAAP//AAAC
+       X0JFR0lOAAAAAAAAAACKAAEAOwAAAAMANQAAAAkAT3BlbiBTYW5zAAAAAAAAYQEAAP//AAAC
        AAgAAAAAAAAACQQAAAAAAAAAAAD/AwAAAAAAiAABAAIAAAABAIcAAQAFAAAA/////wCGAAEA
        BAAAAAAAAABxAAIAXgAAAIcOAACVUAAACQAAAFMAcABlAGMAaQBmAGkAZQByAAAACQAJAAAA
        wwAAAKMBAABzAgAAKQMAAJIDAACEBAAAhAQAAFMFAAD0BQAACQBTAHAAZQBjAGkAZgBpAGUA
@@ -905,7 +896,7 @@
        RV9FTkQAAAAAAAAAAIUAAQAFAAAAs7OzAAGEAAEABQAAAAAAAAAAbwACAC4AAAABAAUAZxcA
        AJpOAAA1NQAAmk4AADU1AABmUgAAZxcAAGZSAABnFwAAmk4AAAAAAAIBACAAAAAWAFhURVhU
        X1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAA
-       AABgAQAA//8AAAIACAAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUA
+       AABhAQAA//8AAAIACAAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUA
        AAD/////AIYAAQAEAAAAAAAAAHEAAgCmAAAAYRgAAJVQAAASAAAAVgBhAGwAdQBlAHMAIABw
        AGUAcgAgAHMAZQBnAG0AZQBuAHQAAAASABIAAADlAAAAuAEAACICAAALAwAA2gMAAIgEAADl
        BAAAxQUAAJUGAAA2BwAAkwcAAEAIAAAQCQAA1wkAADILAAABDAAA6gwAAIMNAAASAFYAYQBs
@@ -924,7 +915,7 @@
        QVBFX0VORAAAAAAAAAAAhQABAAUAAADMzMwAAYQAAQAFAAAAAAAAAABvAAIALgAAAAEABQBM
        AQAAZlIAAI0NAABmUgAAjQ0AADJWAABMAQAAMlYAAEwBAABmUgAAAAAAAgEAIAAAABYAWFRF
        WFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAA
-       AAAAAGABAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEA
+       AAAAAGEBAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEA
        BQAAAP////8AhgABAAQAAAAAAAAAcQACAFYAAABGAgAAYVQAAAgAAABNAG8AdgBlAG0AZQBu
        AHQAAAAIAAgAAAA+AQAAEQIAAMMCAACKAwAA0AQAAJcFAABvBgAA6gYAAAgATQBvAHYAZQBt
        AGUAbgB0AAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MB
@@ -935,14 +926,14 @@
        AAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAhQABAAUAAADM
        zMwAAYQAAQAFAAAAAAAAAABvAAIALgAAAAEABQCNDQAAZlIAAGcXAABmUgAAZxcAADJWAACN
        DQAAMlYAAI0NAABmUgAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAA
-       AAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAAAGABAAD//wAAAgAFAAAAAAAAAAkE
+       AAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAAAGEBAAD//wAAAgAFAAAAAAAAAAkE
        AAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAAAP////8AhgABAAQAAAAAAAAAcQAC
        AB4AAACHDgAAYVQAAAEAAABtAAAAAQABAAAARgEAAAEAbQAAAgEAEwAAAAkAWFRFWFRfRU9D
        AAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9Q
        AAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAIUAAQAFAAAA
        zMzMAAGEAAEABQAAAAAAAAAAbwACAC4AAAABAAUAZxcAAGZSAAA1NQAAZlIAADU1AAAyVgAA
        ZxcAADJWAABnFwAAZlIAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAA
-       AAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAABgAQAA//8AAAIABQAAAAAAAAAJ
+       AAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAABhAQAA//8AAAIABQAAAAAAAAAJ
        BAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEA
        AgCGAAAAYRgAAGFUAAAOAAAAMQAgAHQAYQByAGcAZQB0ACAAcABvAGkAbgB0AAAADgAOAAAA
        xwAAACQBAACfAQAAYgIAAPICAACwAwAAdwQAAPIEAABPBQAAJwYAAPoGAABTBwAAKwgAAKYI
@@ -959,7 +950,7 @@
        SEFQRV9FTkQAAAAAAAAAAIUAAQAFAAAA5ubmAAGEAAEABQAAAAAAAAAAbwACAC4AAAABAAUA
        TAEAADJWAACNDQAAMlYAAI0NAAD+WQAATAEAAP5ZAABMAQAAMlYAAAAAAAIBACAAAAAWAFhU
        RVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMA
-       AAAAAABgAQAA//8AAAIABQAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwAB
+       AAAAAABhAQAA//8AAAIABQAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwAB
        AAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgA2AAAARgIAAC1YAAAEAAAATABpAG4AZQAAAAQA
        BAAAALYAAAAPAQAA5wEAAK4CAAAEAEwAaQBuAGUAAAIBABMAAAAJAFhURVhUX0VPQwAAAAAA
        AAAAAAIBABMAAAAJAFhURVhUX0VPQwEAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwIAAAAA
@@ -968,14 +959,14 @@
        UEVfRU5EAAAAAAAAAACFAAEABQAAAObm5gABhAABAAUAAAAAAAAAAG8AAgAuAAAAAQAFAI0N
        AAAyVgAAZxcAADJWAABnFwAA/lkAAI0NAAD+WQAAjQ0AADJWAAAAAAACAQAgAAAAFgBYVEVY
        VF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACKAAEAOwAAAAMANQAAAAkAT3BlbiBTYW5zAAAA
-       AAAAYAEAAP//AAACAAUAAAAAAAAACQQAAAAAAAAAAAD/AwAAAAAAiAABAAIAAAABAIcAAQAF
+       AAAAYQEAAP//AAACAAUAAAAAAAAACQQAAAAAAAAAAAD/AwAAAAAAiAABAAIAAAABAIcAAQAF
        AAAA/////wCGAAEABAAAAAAAAABxAAIAHgAAAIcOAAAtWAAAAQAAAGwAAAABAAEAAABZAAAA
        AQBsAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAA
        AAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNI
        QVBFX0VORAAAAAAAAAAAhQABAAUAAADm5uYAAYQAAQAFAAAAAAAAAABvAAIALgAAAAEABQBn
        FwAAMlYAADU1AAAyVgAANTUAAP5ZAABnFwAA/lkAAGcXAAAyVgAAAAAAAgEAIAAAABYAWFRF
        WFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAA
-       AAAAAGABAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEA
+       AAAAAGEBAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEA
        BQAAAP////8AhgABAAQAAAAAAAAAcQACAG4AAABhGAAALVgAAAsAAAAxACAAZQBuAGQAIABw
        AG8AaQBuAHQAAAALAAsAAADHAAAAJAEAAOsBAADDAgAAmwMAAPgDAADQBAAApAUAAPwFAADU
        BgAATwcAAAsAMQAgAGUAbgBkACAAcABvAGkAbgB0AAACAQATAAAACQBYVEVYVF9FT0MAAAAA
@@ -989,7 +980,7 @@
        AAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAhQABAAUAAADMzMwA
        AYQAAQAFAAAAAAAAAABvAAIALgAAAAEABQBMAQAA/lkAAI0NAAD+WQAAjQ0AAMpdAABMAQAA
        yl0AAEwBAAD+WQAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAA
-       igABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAAAGABAAD//wAAAgAFAAAAAAAAAAkEAAAA
+       igABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAAAGEBAAD//wAAAgAFAAAAAAAAAAkEAAAA
        AAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAAAP////8AhgABAAQAAAAAAAAAcQACAHYA
        AABGAgAA+VsAAAwAAABCAGUAegBpAGUAcgAgAGMAdQByAHYAZQAAAAwADAAAAOUAAACsAQAA
        UQIAAKoCAABxAwAAAAQAAF4EAAAHBQAA3wUAAG8GAAAhBwAA6AcAAAwAQgBlAHoAaQBlAHIA
@@ -1004,14 +995,14 @@
        X1BBSU5UU0hBUEVfRU5EAAAAAAAAAACFAAEABQAAAMzMzAABhAABAAUAAAAAAAAAAG8AAgAu
        AAAAAQAFAI0NAAD+WQAAZxcAAP5ZAABnFwAAyl0AAI0NAADKXQAAjQ0AAP5ZAAAAAAACAQAg
        AAAAFgBYVEVYVF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACKAAEAOwAAAAMANQAAAAkAT3Bl
-       biBTYW5zAAAAAAAAYAEAAP//AAACAAUAAAAAAAAACQQAAAAAAAAAAAD/AwAAAAAAiAABAAIA
+       biBTYW5zAAAAAAAAYQEAAP//AAACAAUAAAAAAAAACQQAAAAAAAAAAAD/AwAAAAAAiAABAAIA
        AAABAIcAAQAFAAAA/////wCGAAEABAAAAAAAAABxAAIAHgAAAIcOAAD5WwAAAQAAAGIAAAAB
        AAEAAADYAAAAAQBiAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVY
        VF9FT0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVY
        VF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAhQABAAUAAADMzMwAAYQAAQAFAAAAAAAAAABvAAIA
        LgAAAAEABQBnFwAA/lkAADU1AAD+WQAANTUAAMpdAABnFwAAyl0AAGcXAAD+WQAAAAAAAgEA
        IAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9w
-       ZW4gU2FucwAAAAAAAGABAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQAC
+       ZW4gU2FucwAAAAAAAGEBAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQAC
        AAAAAQCHAAEABQAAAP////8AhgABAAQAAAAAAAAAcQACAA4BAABhGAAA+VsAAB8AAAAyACAA
        YwBvAG4AdAByAG8AbABzACAAcABvAGkAbgB0AHMAIAArACAAMQAgAGUAbgBkACAAcABvAGkA
        bgB0AAAAHwAfAAAAxwAAACQBAADNAQAAoQIAAHkDAAD0AwAAhAQAAFcFAACwBQAAWgYAALcG
@@ -1040,7 +1031,7 @@
        RU9QAAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAIUAAQAF
        AAAA5ubmAAGEAAEABQAAAAAAAAAAbwACAC4AAAABAAUATAEAAMpdAACNDQAAyl0AAI0NAACW
        YQAATAEAAJZhAABMAQAAyl0AAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4A
-       AAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAABgAQAA//8AAAIABQAAAAAA
+       AAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAABhAQAA//8AAAIABQAAAAAA
        AAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAA
        AHEAAgAuAAAARgIAAMVfAAADAAAAQQByAGMAAAADAAMAAADgAAAAcAEAABoCAAADAEEAcgBj
        AAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAA
@@ -1049,14 +1040,14 @@
        X0VORAAAAAAAAAAAhQABAAUAAADm5uYAAYQAAQAFAAAAAAAAAABvAAIALgAAAAEABQCNDQAA
        yl0AAGcXAADKXQAAZxcAAJZhAACNDQAAlmEAAI0NAADKXQAAAAAAAgEAIAAAABYAWFRFWFRf
        UEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAA
-       AGABAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAA
+       AGEBAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAA
        AP////8AhgABAAQAAAAAAAAAcQACAB4AAACHDgAAxV8AAAEAAABhAAAAAQABAAAAwwAAAAEA
        YQAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAA
        AAAAAgEAEwAAAAkAWFRFWFRfRU9QAAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQ
        RV9FTkQAAAAAAAAAAIUAAQAFAAAA5ubmAAGEAAEABQAAAAAAAAAAbwACAC4AAAABAAUAZxcA
        AMpdAAA1NQAAyl0AADU1AACWYQAAZxcAAJZhAABnFwAAyl0AAAAAAAIBACAAAAAWAFhURVhU
        X1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAA
-       AABgAQAA//8AAAIABQAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUA
+       AABhAQAA//8AAAIABQAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUA
        AAD/////AIYAAQAEAAAAAAAAAHEAAgA2AQAAYRgAAMVfAAAkAAAAMQAgAGMAbwBuAHQAcgBv
        AGwAIABwAG8AaQBuAHQAIAArACAAMQAgAG4AdQBtAGIAZQByACAAYQBzACAAZABlAGcAcgBl
        AGUAAAAkACQAAADHAAAAJAEAAM0BAAChAgAAeQMAAPQDAACEBAAAVwUAALAFAAANBgAA5QYA
@@ -1089,7 +1080,7 @@
        VF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAhQABAAUAAADMzMwAAYQAAQAFAAAAAAAAAABvAAIA
        LgAAAAEABQBMAQAAlmEAAI0NAACWYQAAjQ0AAGJlAABMAQAAYmUAAEwBAACWYQAAAAAAAgEA
        IAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9w
-       ZW4gU2FucwAAAAAAAGABAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQAC
+       ZW4gU2FucwAAAAAAAGEBAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQAC
        AAAAAQCHAAEABQAAAP////8AhgABAAQAAAAAAAAAcQACAD4AAABGAgAAkWMAAAUAAABDAGwA
        bwBzAGUAAAAFAAUAAADcAAAANQEAAAkCAACyAgAAeQMAAAUAQwBsAG8AcwBlAAACAQATAAAA
        CQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAAAAACAQATAAAA
@@ -1098,7 +1089,7 @@
        CQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAAAAAA
        AAAAhQABAAUAAADMzMwAAYQAAQAFAAAAAAAAAABvAAIALgAAAAEABQCNDQAAlmEAAGcXAACW
        YQAAZxcAAGJlAACNDQAAYmUAAI0NAACWYQAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQ
-       RV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAAAGABAAD//wAA
+       RV9CRUdJTgAAAAAAAAAAigABADsAAAADADUAAAAJAE9wZW4gU2FucwAAAAAAAGEBAAD//wAA
        AgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAAAP////8AhgAB
        AAQAAAAAAAAAcQACAB4AAACHDgAAkWMAAAEAAABjAAAAAQABAAAAqQAAAAEAYwAAAgEAEwAA
        AAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAA
@@ -1202,7 +1193,7 @@
     </draw:frame>
    </draw:page>
    <draw:page draw:name="page3" draw:style-name="dp2" draw:master-page-name="Default">
-    <draw:frame draw:style-name="gr10" draw:text-style-name="P11" draw:layer="layout" svg:width="21cm" svg:height="29.7cm" svg:x="0cm" svg:y="0cm">
+    <draw:frame draw:style-name="gr10" draw:text-style-name="P10" draw:layer="layout" svg:width="21cm" svg:height="29.7cm" svg:x="0cm" svg:y="0cm">
      <draw:text-box>
       <text:p text:style-name="P3"><text:span text:style-name="T3">Tags</text:span></text:p>
       <text:p><text:span text:style-name="T15">Tags define styling parameters for geometries or the type of themself. They come with a type name, followed by “=” and one or more values.</text:span></text:p>
@@ -1217,142 +1208,142 @@
       <table:table-column table:style-name="co6"/>
       <table:table-row table:style-name="ro2" table:default-cell-style-name="ce6">
        <table:table-cell>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Font</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">font</text:span><text:span text:style-name="T18">=Liberation Sans</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Name of font for text rendering.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">size</text:span><text:span text:style-name="T18">=20</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Geometry size (in pixels) depending on mode.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">bold</text:span><text:span text:style-name="T18">=n</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Font decoration.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">‘</text:span><text:span text:style-name="T18">y’ for bold, ‘n’ for normal.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">italic</text:span><text:span text:style-name="T18">=n</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">underline</text:span><text:span text:style-name="T18">=n</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">strikeout</text:span><text:span text:style-name="T18">=n</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18"/></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Position</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">position</text:span><text:span text:style-name="T18">=0,0 | 0,0,0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Position on screen (2D or 3D).</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">alignment</text:span><text:span text:style-name="T18">=20,30 | 5</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Alignment of geometry position.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Can be either standard numpad alignments (1-9) or two numbers (0-100) in percentage.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">margin</text:span><text:span text:style-name="T18">=10 | 10,20,20,10</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Margin to screen edges. Either all edges in one number or each edge seperately (top, right, bottom, left).</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">margin-top</text:span><text:span text:style-name="T18">=10</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">margin-right</text:span><text:span text:style-name="T18">=20</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">margin-bottom</text:span><text:span text:style-name="T18">=20</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">Margin-lef</text:span><text:span text:style-name="T18">t=10</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">wrap-style</text:span><text:span text:style-name="T18">=space</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Defines how the wrapper should handle breaking text into new lines. Can be ‘space’, ‘character’ or ‘nowrap’.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">direction</text:span><text:span text:style-name="T18">=LTR</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Direction of text rendering.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Can be LTR, RTL, TTB and BTT</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">(left-to-right, right-to-left, top-to-bottom, bottom-to-top).</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">space</text:span><text:span text:style-name="T18">=0 | 0,0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Space between geometries/lines.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">space-h</text:span><text:span text:style-name="T18">=10</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">space-v</text:span><text:span text:style-name="T18">=20</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">rotate</text:span><text:span text:style-name="T18">=0,0,0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">rotate-x</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">rotate-y</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">rotate-z</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Geometry rotation on target axis in degree.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">scale</text:span><text:span text:style-name="T18">=1 | 1,1 | 1,1,1</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">scale-x</text:span><text:span text:style-name="T18">=1</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">scale-y</text:span><text:span text:style-name="T18">=1</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">scale-z</text:span><text:span text:style-name="T18">=1</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Geometry scale on target axis in percentage.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">translate</text:span><text:span text:style-name="T18">=0,0,0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">translate-x</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">translate-y</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">translate-z</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Geometry translation on target in pixels.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">shear</text:span><text:span text:style-name="T18">=0,0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">shear-x</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">shear-y</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Geometry shearing on target as weight.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">matrix</text:span><text:span text:style-name="T18">=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Matrix for transformation to be set.</text:span></text:p>
+        <text:p><text:span text:style-name="T16">Font</text:span></text:p>
+        <text:p><text:span text:style-name="T17">font</text:span><text:span text:style-name="T18">=Liberation Sans</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Name of font for text rendering.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">size</text:span><text:span text:style-name="T18">=20</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Geometry size (in pixels) depending on mode.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">bold</text:span><text:span text:style-name="T18">=n</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Font decoration.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">‘</text:span><text:span text:style-name="T18">y’ for bold, ‘n’ for normal.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">italic</text:span><text:span text:style-name="T18">=n</text:span></text:p>
+        <text:p><text:span text:style-name="T17">underline</text:span><text:span text:style-name="T18">=n</text:span></text:p>
+        <text:p><text:span text:style-name="T17">strikeout</text:span><text:span text:style-name="T18">=n</text:span></text:p>
+        <text:p><text:span text:style-name="T18"/></text:p>
+        <text:p><text:span text:style-name="T16">Position</text:span></text:p>
+        <text:p><text:span text:style-name="T17">position</text:span><text:span text:style-name="T18">=0,0 | 0,0,0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Position on screen (2D or 3D).</text:span></text:p>
+        <text:p><text:span text:style-name="T17">alignment</text:span><text:span text:style-name="T18">=20,30 | 5</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Alignment of geometry position.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Can be either standard numpad alignments (1-9) or two numbers (0-100) in percentage.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">margin</text:span><text:span text:style-name="T18">=10 | 10,20,20,10</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Margin to screen edges. Either all edges in one number or each edge seperately (top, right, bottom, left).</text:span></text:p>
+        <text:p><text:span text:style-name="T17">margin-top</text:span><text:span text:style-name="T18">=10</text:span></text:p>
+        <text:p><text:span text:style-name="T17">margin-right</text:span><text:span text:style-name="T18">=20</text:span></text:p>
+        <text:p><text:span text:style-name="T17">margin-bottom</text:span><text:span text:style-name="T18">=20</text:span></text:p>
+        <text:p><text:span text:style-name="T17">margin-lef</text:span><text:span text:style-name="T18">t=10</text:span></text:p>
+        <text:p><text:span text:style-name="T17">wrap-style</text:span><text:span text:style-name="T18">=space</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Defines how the wrapper should handle breaking text into new lines. Can be ‘space’, ‘character’ or ‘nowrap’.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">direction</text:span><text:span text:style-name="T18">=ltr</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Direction of text rendering.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Can be ltr, rtl, ttb and btt</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">(left-to-right, right-to-left, top-to-bottom, bottom-to-top).</text:span></text:p>
+        <text:p><text:span text:style-name="T17">space</text:span><text:span text:style-name="T18">=0 | 0,0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Space between geometries/lines.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">space-h</text:span><text:span text:style-name="T18">=10</text:span></text:p>
+        <text:p><text:span text:style-name="T17">space-v</text:span><text:span text:style-name="T18">=20</text:span></text:p>
+        <text:p><text:span text:style-name="T17">rotate</text:span><text:span text:style-name="T18">=0,0,0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">rotate-x</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">rotate-y</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">rotate-z</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Geometry rotation on target axis in degree.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">scale</text:span><text:span text:style-name="T18">=1 | 1,1 | 1,1,1</text:span></text:p>
+        <text:p><text:span text:style-name="T17">scale-x</text:span><text:span text:style-name="T18">=1</text:span></text:p>
+        <text:p><text:span text:style-name="T17">scale-y</text:span><text:span text:style-name="T18">=1</text:span></text:p>
+        <text:p><text:span text:style-name="T17">scale-z</text:span><text:span text:style-name="T18">=1</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Geometry scale on target axis in percentage.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">translate</text:span><text:span text:style-name="T18">=0,0,0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">translate-x</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">translate-y</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">translate-z</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Geometry translation on target in pixels.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">shear</text:span><text:span text:style-name="T18">=0,0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">shear-x</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">shear-y</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Geometry shearing on target as weight.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">matrix</text:span><text:span text:style-name="T18">=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Matrix for transformation to be set.</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Geometry</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">mode</text:span><text:span text:style-name="T18">=text</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Mode can be ‘text’, ‘shape’ or ‘points’.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">border</text:span><text:span text:style-name="T18">=2 | 2,2</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Border width of geometry.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">border-h</text:span><text:span text:style-name="T18">=2</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">border-v</text:span><text:span text:style-name="T18">=2</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">join</text:span><text:span text:style-name="T18">=round</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Border and line join style. Can be round, bevel or miter.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">cap</text:span><text:span text:style-name="T18">=round</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Border and line cap style. Can be round,</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">butt or square.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18"/></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Textures</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">texture</text:span><text:span text:style-name="T18">=&lt;RESOURCE_ID&gt;</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Texture on geometry. Texturing can be enabled by valid RESOURCE_ID and disabled by an invalid one.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">texfill</text:span><text:span text:style-name="T18">=1,2,3,4 | 0,0,1,0,pad</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18">Texture position (1,2) in percent, size (3,4) in percent and wrapping (pad).</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Wrapping can be pad, clamp, repeat and mirror.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18"/></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Color</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">color</text:span><text:span text:style-name="T18">=FFFFFF |</text:span></text:p>
+        <text:p><text:span text:style-name="T16">Geometry</text:span></text:p>
+        <text:p><text:span text:style-name="T17">mode</text:span><text:span text:style-name="T18">=text</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Mode can be ‘text’, ‘shape’ or ‘points’.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">border</text:span><text:span text:style-name="T18">=2 | 2,2</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Border width of geometry.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">border-h</text:span><text:span text:style-name="T18">=2</text:span></text:p>
+        <text:p><text:span text:style-name="T17">border-v</text:span><text:span text:style-name="T18">=2</text:span></text:p>
+        <text:p><text:span text:style-name="T17">join</text:span><text:span text:style-name="T18">=round</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Border and line join style. Can be round, bevel or miter.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">cap</text:span><text:span text:style-name="T18">=round</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Border and line cap style. Can be round,</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">butt or square.</text:span></text:p>
+        <text:p><text:span text:style-name="T18"/></text:p>
+        <text:p><text:span text:style-name="T16">Textures</text:span></text:p>
+        <text:p><text:span text:style-name="T17">texture</text:span><text:span text:style-name="T18">=&lt;RESOURCE_ID&gt;</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Texture on geometry. Texturing can be enabled by valid RESOURCE_ID and disabled by an invalid one.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">texfill</text:span><text:span text:style-name="T18">=1,2,3,4 | 0,0,1,0,pad</text:span></text:p>
+        <text:p><text:span text:style-name="T18">Texture position (1,2) in percent, size (3,4) in percent and wrapping (pad).</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Wrapping can be pad, clamp, repeat and mirror.</text:span></text:p>
+        <text:p><text:span text:style-name="T18"/></text:p>
+        <text:p><text:span text:style-name="T16">Color</text:span></text:p>
+        <text:p><text:span text:style-name="T17">color</text:span><text:span text:style-name="T18">=FFFFFF |</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FFFFFF,FFFFFF |</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FFFFFF,FFFFFF,FFFFFF |</text:span></text:p>
+        <text:p><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF |</text:span></text:p>
+        <text:p><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Color for geometry. Can be mono, left-to-right, left-to-mid-to-right, 4-corners gradient or 4-corners + center gradient.</text:span></text:p>
+        <text:p text:style-name="P12"><text:span text:style-name="T20">bordercolor</text:span><text:span text:style-name="T19">=</text:span><text:span text:style-name="T18">FFFFFF |</text:span></text:p>
         <text:p text:style-name="P12"><text:span text:style-name="T18">FFFFFF,FFFFFF |</text:span></text:p>
         <text:p text:style-name="P12"><text:span text:style-name="T18">FFFFFF,FFFFFF,FFFFFF |</text:span></text:p>
         <text:p text:style-name="P12"><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF |</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Color for geometry. Can be mono, left-to-right, left-to-mid-to-right, 4-corners gradient or 4-corners + center gradient.</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T20">bordercolor</text:span><text:span text:style-name="T19">=</text:span><text:span text:style-name="T18">FFFFFF |</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T18">FFFFFF,FFFFFF |</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T18">FFFFFF,FFFFFF,FFFFFF |</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF |</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">alpha</text:span><text:span text:style-name="T18">=FF |</text:span></text:p>
+        <text:p><text:span text:style-name="T19">FFFFFF,FFFFFF,FFFFFF,FFFFFF,</text:span><text:span text:style-name="T18">FFFFFF</text:span></text:p>
+        <text:p><text:span text:style-name="T17">alpha</text:span><text:span text:style-name="T18">=FF |</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FF,FF |</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FF,FF,FF |</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FF,FF,FF,FF |</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FF,FF,FF,FF,FF</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Alpha for geometry. Can be mono, left-to-right, left-to-mid-to-right, 4-corners gradient or 4-corners + center gradient.</text:span></text:p>
+        <text:p text:style-name="P12"><text:span text:style-name="T20">borderalpha</text:span><text:span text:style-name="T19">=</text:span><text:span text:style-name="T18">FF |</text:span></text:p>
         <text:p text:style-name="P12"><text:span text:style-name="T18">FF,FF |</text:span></text:p>
         <text:p text:style-name="P12"><text:span text:style-name="T18">FF,FF,FF |</text:span></text:p>
         <text:p text:style-name="P12"><text:span text:style-name="T18">FF,FF,FF,FF |</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18">FF,FF,FF,FF,FF</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Alpha for geometry. Can be mono, left-to-right, left-to-mid-to-right, 4-corners gradient or 4-corners + center gradient.</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T20">borderalpha</text:span><text:span text:style-name="T19">=</text:span><text:span text:style-name="T18">FF |</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T18">FF,FF |</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T18">FF,FF,FF |</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T18">FF,FF,FF,FF |</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18">FF,FF,FF,FF,FF</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">blur</text:span><text:span text:style-name="T18">=0,0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Gaussian blur on geometry and border.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">blur-h</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">blur-v</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T18">FF,FF,FF,FF,FF</text:span></text:p>
+        <text:p><text:span text:style-name="T17">blur</text:span><text:span text:style-name="T18">=0,0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Gaussian blur on geometry and border.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">blur-h</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p><text:span text:style-name="T17">blur-v</text:span><text:span text:style-name="T18">=0</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Rastering</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">target</text:span><text:span text:style-name="T18">=frame</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Swaps target on rendering.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Can be frame or mask.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Drawing on mask uses alpha value instead of color.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">mask-mode</text:span><text:span text:style-name="T18">=normal</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Defines how the mask is going to be applied on the current render process.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Normal means every pixel with alpha=255 will not be visible, invert means every pixel with alpha=0 will not be visible.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">mask-clear</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T15">Resets all value in the mask with 0.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">blend</text:span><text:span text:style-name="T18">=overlay</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Blending mode.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Can be ‘add’, ‘subtract’, ‘multiply’, ‘invert’, ‘difference’ or ‘screen’.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18"/></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Animation</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">animate</text:span><text:span text:style-name="T18">=</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18">[color=000000;translate-x=20]</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">animate</text:span><text:span text:style-name="T18">=</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18">[t,[color=000000;translate-x=20]]</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">animate</text:span><text:span text:style-name="T18">=</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18">[0,1000,sin(t*pi),[color=000000]]</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Interpolate between two values in a given timeframe with a specific acceleration function.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T18"/></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T16">Karaoke</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">k</text:span><text:span text:style-name="T18">=100</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Tag for how long a sylable is sung in milliseconds.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">kset</text:span><text:span text:style-name="T18">=0</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Reset karaoke time of event.</text:span></text:p>
-        <text:p text:style-name="P12"><text:span text:style-name="T17">kcolor</text:span><text:span text:style-name="T18">=FF00FF</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T18">Color highlight of karaoke effect.</text:span></text:p>
+        <text:p><text:span text:style-name="T16">Rastering</text:span></text:p>
+        <text:p><text:span text:style-name="T17">target</text:span><text:span text:style-name="T18">=frame</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Swaps target on rendering.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Can be frame or mask.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Drawing on mask uses alpha value instead of color.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">mask-mode</text:span><text:span text:style-name="T18">=normal</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Defines how the mask is going to be applied on the current render process.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Normal means every pixel with alpha=255 will not be visible, invert means every pixel with alpha=0 will not be visible.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">mask-clear</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T15">Resets all value in the mask with 0.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">blend</text:span><text:span text:style-name="T18">=overlay</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Blending mode.</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Can be ‘add’, ‘subtract’, ‘multiply’, ‘invert’, ‘difference’ or ‘screen’.</text:span></text:p>
+        <text:p><text:span text:style-name="T18"/></text:p>
+        <text:p><text:span text:style-name="T16">Animation</text:span></text:p>
+        <text:p><text:span text:style-name="T17">animate</text:span><text:span text:style-name="T18">=</text:span></text:p>
+        <text:p><text:span text:style-name="T18">[color=000000;translate-x=20]</text:span></text:p>
+        <text:p><text:span text:style-name="T17">animate</text:span><text:span text:style-name="T18">=</text:span></text:p>
+        <text:p><text:span text:style-name="T18">[t,[color=000000;translate-x=20]]</text:span></text:p>
+        <text:p><text:span text:style-name="T17">animate</text:span><text:span text:style-name="T18">=</text:span></text:p>
+        <text:p><text:span text:style-name="T18">[0,1000,sin(t*pi),[color=000000]]</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Interpolate between two values in a given timeframe with a specific acceleration function.</text:span></text:p>
+        <text:p><text:span text:style-name="T18"/></text:p>
+        <text:p><text:span text:style-name="T16">Karaoke</text:span></text:p>
+        <text:p><text:span text:style-name="T17">k</text:span><text:span text:style-name="T18">=100</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Tag for how long a sylable is sung in milliseconds.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">kset</text:span><text:span text:style-name="T18">=0</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Reset karaoke time of event.</text:span></text:p>
+        <text:p><text:span text:style-name="T17">kcolor</text:span><text:span text:style-name="T18">=FF00FF</text:span></text:p>
+        <text:p text:style-name="P11"><text:span text:style-name="T18">Color highlight of karaoke effect.</text:span></text:p>
        </table:table-cell>
       </table:table-row>
      </table:table><draw:image>
@@ -1938,9 +1929,9 @@
        AAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAA
        AAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNh
        bnMAAAAAAAAaAQAA//8AAAIACAAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEA
-       hwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgB2AAAAJgIAAEE1AAAOAAAATQBhAHIAZwBp
-       AG4ALQBsAGUAZgB0AD0AMQAwAAAACgAKAAAACwEAALQBAAAzAgAA1AIAACkDAADjAwAAQAQA
-       AJUEAAA+BQAArAUAAA4ATQBhAHIAZwBpAG4ALQBsAGUAZgB0AD0AMQAwAAACAQATAAAACQBY
+       hwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgB2AAAAJgIAAEE1AAAOAAAAbQBhAHIAZwBp
+       AG4ALQBsAGUAZgB0AD0AMQAwAAAACgAKAAAAFwEAAMEBAABAAgAA4QIAADUDAADwAwAATQQA
+       AKEEAABLBQAAuQUAAA4AbQBhAHIAZwBpAG4ALQBsAGUAZgB0AD0AMQAwAAACAQATAAAACQBY
        VEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAAAAACAQATAAAACQBY
        VEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MDAAAAAAAAAAACAQATAAAACQBY
        VEVYVF9FT0MEAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MFAAAAAAAAAAACAQATAAAACQBY
@@ -1948,8 +1939,8 @@
        VEVYVF9FT0MHAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MIAAAAAAAAAAACAQATAAAACQBY
        VEVYVF9FT0MJAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAAAaAQAA//8A
        AAIABQAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYA
-       AQAEAAAAAAAAAHEAAgBeAAAA0gcAAEE1AAAOAAAATQBhAHIAZwBpAG4ALQBsAGUAZgB0AD0A
-       MQAwAAoABAAEAAAAZgAAAAYBAACnAQAASAIAAA4ATQBhAHIAZwBpAG4ALQBsAGUAZgB0AD0A
+       AQAEAAAAAAAAAHEAAgBeAAAA3wcAAEE1AAAOAAAAbQBhAHIAZwBpAG4ALQBsAGUAZgB0AD0A
+       MQAwAAoABAAEAAAAZgAAAAYBAACnAQAASAIAAA4AbQBhAHIAZwBpAG4ALQBsAGUAZgB0AD0A
        MQAwAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAA
        AAAAAAACAQATAAAACQBYVEVYVF9FT1cBAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAA
        AAAAAAACAQATAAAACQBYVEVYVF9FT0MDAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAA
@@ -2081,17 +2072,17 @@
        CQBYVEVYVF9FT0MgAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAAAAAAAAACAQATAAAA
        CQBYVEVYVF9FT1AAAAAAAAAAAIoAAQA7AAAAAwA1AAAACQBPcGVuIFNhbnMAAAAAAAAaAQAA
        //8AAAIACAAAAAAAAAAJBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////
-       AIYAAQAEAAAAAAAAAHEAAgBuAAAAJgIAAN88AAANAAAAZABpAHIAZQBjAHQAaQBvAG4APQBM
-       AFQAUgAAAAkACQAAALIAAAAGAQAAhQEAAC8CAAC/AgAAOgMAAI4DAAA8BAAA9gQAAA0AZABp
-       AHIAZQBjAHQAaQBvAG4APQBMAFQAUgAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEA
+       AIYAAQAEAAAAAAAAAHEAAgBuAAAAJgIAAN88AAANAAAAZABpAHIAZQBjAHQAaQBvAG4APQBs
+       AHQAcgAAAAkACQAAALIAAAAGAQAAhQEAAC8CAAC/AgAAOgMAAI4DAAA8BAAA9gQAAA0AZABp
+       AHIAZQBjAHQAaQBvAG4APQBsAHQAcgAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEA
        EwAAAAkAWFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAgAAAAAAAAAAAgEA
        EwAAAAkAWFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBAAAAAAAAAAAAgEA
        EwAAAAkAWFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBgAAAAAAAAAAAgEA
        EwAAAAkAWFRFWFRfRU9DBwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCAAAAAAAAACKAAEA
        OwAAAAMANQAAAAkAT3BlbiBTYW5zAAAAAAAAGgEAAP//AAACAAUAAAAAAAAACQQAAAAAAAAA
        AAD/AwAAAAAAiAABAAIAAAABAIcAAQAFAAAA/////wCGAAEABAAAAAAAAABxAAIAWgAAABwH
-       AADfPAAADQAAAGQAaQByAGUAYwB0AGkAbwBuAD0ATABUAFIACQAEAAQAAAChAAAANQEAANIB
-       AAB/AgAADQBkAGkAcgBlAGMAdABpAG8AbgA9AEwAVABSAAACAQATAAAACQBYVEVYVF9FT0MA
+       AADfPAAADQAAAGQAaQByAGUAYwB0AGkAbwBuAD0AbAB0AHIACQAEAAQAAAChAAAA6QAAAE4B
+       AADBAQAADQBkAGkAcgBlAGMAdABpAG8AbgA9AGwAdAByAAACAQATAAAACQBYVEVYVF9FT0MA
        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cB
        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MD
        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AA
@@ -2121,11 +2112,11 @@
        X0VPTAAAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPUAAAAAAAAAAAigABADsAAAADADUAAAAJ
        AE9wZW4gU2FucwAAAAAAABoBAAD//wAAAgAFAAAAAAAAAAkEAAAAAAAAAAAA/wMAAAAAAIgA
        AQACAAAAAQCHAAEABQAAAP////8AhgABAAQAAAAAAAAAcQACAPYAAADuAgAA6z8AABwAAABD
-       AGEAbgAgAGIAZQAgAEwAVABSACwAIABSAFQATAAsACAAVABUAEIAIABhAG4AZAAgAEIAVABU
-       AAAAHAAcAAAAsgAAAE4BAAD8AQAARAIAAPICAACSAwAA2gMAAG8EAAALBQAAuQUAAPwFAABE
-       BgAA8gYAAI8HAAAjCAAAZwgAAK8IAABLCQAA6AkAAJ4KAADmCgAAggsAADAMAADeDAAAJg0A
-       ANwNAAB4DgAAFQ8AABwAQwBhAG4AIABiAGUAIABMAFQAUgAsACAAUgBUAEwALAAgAFQAVABC
-       ACAAYQBuAGQAIABCAFQAVAAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkA
+       AGEAbgAgAGIAZQAgAGwAdAByACwAIAByAHQAbAAsACAAdAB0AGIAIABhAG4AZAAgAGIAdAB0
+       AAAAHAAcAAAAsgAAAE4BAAD8AQAARAIAAPICAACSAwAA2gMAACIEAACIBAAA+gQAAD4FAACG
+       BQAA+AUAAF4GAACmBgAA6gYAADIHAACXBwAA/QcAAKoIAADyCAAAjwkAADwKAADqCgAAMgsA
+       AOALAABFDAAAqwwAABwAQwBhAG4AIABiAGUAIABsAHQAcgAsACAAcgB0AGwALAAgAHQAdABi
+       ACAAYQBuAGQAIABiAHQAdAAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkA
        WFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAgAAAAAAAAAAAgEAEwAAAAkA
        WFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XAwAAAAAAAAAAAgEAEwAAAAkA
        WFRFWFRfRU9DBAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAAAAkA
@@ -4730,10 +4721,10 @@
     </draw:frame>
    </draw:page>
    <draw:page draw:name="page4" draw:style-name="dp2" draw:master-page-name="Default">
-    <draw:frame draw:style-name="gr11" draw:text-style-name="P16" draw:layer="layout" svg:width="21cm" svg:height="29.686cm" svg:x="0cm" svg:y="0.014cm">
+    <draw:frame draw:style-name="gr11" draw:text-style-name="P14" draw:layer="layout" svg:width="21cm" svg:height="29.686cm" svg:x="0cm" svg:y="0.014cm">
      <draw:text-box>
       <text:p text:style-name="P3"><text:span text:style-name="T3">Example</text:span></text:p>
-      <text:p text:style-name="P15"><text:span text:style-name="T21">#INFO</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Title: My new project</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Author: Youka</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Version: 16.06.2012</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Description: First concept of a new render format.</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#TARGET</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Width: 1280</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Height: 720</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Depth: 1000</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">View: perspective</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#MACROS</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Default: [bold=y]</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Mine: [bold=n;color=FF0000]</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Another: [Mine;position=100,200,-1;rotate-z=180]I&apos;m a</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#EVENTS</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">//0-2.0|||This line is a comment over 2 seconds!</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">2.0-5:0.0|Another|Hello, i&apos;m a note!|red, <text:s text:c="3"/>rotated\ntext over multiple lines.</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape; texture=RAMEN]m 0 0 l 50.5 0 50.5 20.125 0 20.125</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">10:0.0-10:50:0.0||${Another}Lets scale some text to double its size!|[animate=[500, 1000, [scale=2]]This text is getting huge</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">20.0.0-21.0.0|||[font=MaterialIcon]some_circle_ligature</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">&apos;show-something&apos;|Default||This will only be shown when the event id is given</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#RESOURCE</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Texture: RAMEN,url,../ramen.tga</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Font: MaterialIcon,regular,data,AAEAAAAKAIAAAwAgT1MvMnwMf9s...</text:span></text:p>
+      <text:p text:style-name="P13"><text:span text:style-name="T21">#INFO</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Title: My new project</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Author: Youka</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Version: 16.06.2012</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Description: First concept of a new render format.</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#TARGET</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Width: 1280</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Height: 720</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Depth: 1000</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">View: perspective</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#MACROS</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Default: [bold=y]</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Mine: [bold=n;color=FF0000]</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Another: [Mine;position=100,200,-1;rotate-z=180]I&apos;m a</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#EVENTS</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">//0-2.0|||This line is a comment over 2 seconds!</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">2.0-5:0.0|Another|Hello, i&apos;m a note!|red, <text:s text:c="3"/>rotated\ntext over multiple lines.</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape; texture=RAMEN]m 0 0 l 50.5 0 50.5 20.125 0 20.125</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">10:0.0-10:50:0.0||${Another}Lets scale some text to double its size!|[animate=[500, 1000, [scale=2]]This text is getting huge</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">20.0.0-21.0.0|||[font=MaterialIcon]some_circle_ligature</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">&apos;show-something&apos;|Default||This will only be shown when the event id is given</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">#RESOURCE</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Texture: RAMEN,url,../ramen.tga</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T21">Font: MaterialIcon,regular,data,AAEAAAAKAIAAAwAgT1MvMnwMf9s...</text:span></text:p>
      </draw:text-box>
     </draw:frame>
    </draw:page>
