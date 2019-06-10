@@ -340,8 +340,6 @@ Geometry rotation on plane axis in degree.
 
 #### scale
 ```
-[scale=1]
-[scale=1,1]
 [scale=1,1,1]
 [scale-x=1]
 [scale-y=1]
