@@ -518,6 +518,7 @@ Color for geometry or his border. Can be mono, left-to-right gradient, left-to-m
 
 Transparency for geometry or his border. Can be mono, left-to-right gradient, left-to-mid-to-right gradient, 4-corners gradient or 4-corners + center gradient. Value in hexadecimal (00 = invisible, FF = opaque).
 
+### Rastering
 #### blur
 ```
 [blur=0]
@@ -528,7 +529,6 @@ Transparency for geometry or his border. Can be mono, left-to-right gradient, le
 
 Gaussian blur on geometry + border. Sigma value defines strength. Horizontal and vertical blur available.
 
-### Rastering
 #### mask
 ```
 [target=mask]
