@@ -584,11 +584,11 @@ screen: 1 - (1 - source color) * (1 - destination color)
 ### Animation
 #### animate
 ```
-[animate=[color=000000;translate-x=20]]
-[animate=t,[color=000000;translate-x=20]]
-[animate=0,1000,[color=000000;translate-x=20]]
-[animate=500,1000,[color=000000;translate-x=-20]]
-[animate=0,1000,sin(t*pi),[color=000000;translate-x=20]]
+animate=[color=000000;translate-x=20]
+animate=t,[color=000000;translate-x=20]
+animate=0,1000,[color=000000;translate-x=20]
+animate=500,1000,[color=000000;translate-x=-20]
+animate=0,1000,sin(t*pi),[color=000000;translate-x=20]
 ```
 
 Interpolates style properties over time.
@@ -690,7 +690,7 @@ Another: [Mine;position=100,200,-1;rotate-z=180]I'm a
 //0-2.0|||This line is a comment over 2 seconds!
 2.0-5:0.0|Another|Hello, i'm a note!|red,    rotated\ntext over multiple lines.
 5:0.0-2:5:0.0|Mine|Draw sth.|[mode=shape;texture=RAMEN]m 0 0 l 50.5 0 50.5 20.125 0 20.125
-10:0.0-10:50:0.0||${Another}Lets scale some text to double its size!|[animate=[500, 1000, [scale=2]]This text is getting huge
+10:0.0-10:50:0.0||${Another}Lets scale some text to double its size!|[animate=500, 1000, [scale=2]]This text is getting huge
 20.0.0-21.0.0|||[font=MaterialIcon]some_circle_ligature
 'show-something'|Default||This will only be shown when the event id is given
 
