@@ -13,7 +13,7 @@ readme = "README.md"
 license = "CC-BY-4.0"
 repository = "https://github.com/substation-beta/ssb_book"
 # Document generation
-build = "book.rs"
+build = "build.rs"
 # No crate release (deliver output manually)
 publish = false
 
