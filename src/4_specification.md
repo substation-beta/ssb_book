@@ -182,7 +182,8 @@ In case of no use of position, direction or any transformation tag, geometry wil
 Setting a new position resets current geometry position. Following text wouldn’t continue it’s position flow from text before.
 
 ## Escape characters
-Characters |, [ and ] are identificators for source blocks, so they can’t be used in source cells directly. Add \ before these characters (and \ itself) to escape and use them as content f.e. for texts or notes.
+Characters [ and ] are identificators for source blocks, so they can’t be used in source cells directly. Add \ before these characters (and \ itself) to escape and use them as content f.e. for texts or notes.
+Other than that \n is supported for line break.
 
 ## Auto-Wrapping
 Auto-Wrapping describes the process in which text is broken down into multiple lines of text to not go outside the edge of the screen.
