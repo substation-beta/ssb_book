@@ -6,15 +6,13 @@
 ---
 
 ## Planned
-- [ ] Logo 
-- [ ]  General description
-- [ ]  Influences & history
-- [ ]  Getting started
+- [ ] Logo
+- [ ] General description
+- [ ] Influences & history
+- [ ] Getting started
 - [x] Detailed format documentation
 - [x] Reference [card](https://www.khronos.org/files/opengl-quick-reference-card.pdf)
 - [ ] [Related projects](https://github.com/substation-beta)
 
 
-[License](./LICENSE)
-
-[Contributing](./CONTRIBUTING.md)
+[License](https://github.com/substation-beta/ssb_book/LICENSE) - [Contributing](https://github.com/substation-beta/ssb_book/CONTRIBUTING.md)

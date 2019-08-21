@@ -1,6 +1,6 @@
 use mdbook::MDBook;
 use std::{
-    fs::{copy, create_dir_all, read_dir},
+    fs::{copy, create_dir_all, read_dir, FileType},
     io::Result
 };
 
@@ -19,12 +19,11 @@ fn main() {
 fn copy_files<P: AsRef<str>>(src_dir: P, dst_dir: P) -> Result<()> {
     for entry in read_dir(src_dir.as_ref())? {
         if let Ok(entry) = entry {
-            if let Ok(entry_type) = entry.file_type() {
-                if entry_type.is_file() {
-                    let from = entry.path();
-                    let to = dst_dir.as_ref().to_owned() + &entry.file_name().to_string_lossy().into_owned();
-                    copy(&from, &to)?;
-                }
+            if entry.file_type().as_ref().map(FileType::is_file).unwrap_or(false) {
+                copy(
+                    &entry.path(),
+                    &(dst_dir.as_ref().to_owned() + &entry.file_name().to_string_lossy().into_owned())
+                )?;
             }
         }
     }
