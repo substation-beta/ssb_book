@@ -133,8 +133,8 @@ Note is just an information beside, renderers ignore it.
 ### text
 Text is a mix of style tags and geometries. Everything what should be rendered is written here.
 
-## RESOURCE section
-The RESOURCE section describes all resources that will be used within the subtitle format. This includes images and fonts.
+## RESOURCES section
+The RESOURCES section describes all resources that will be used within the subtitle format. This includes images and fonts.
 
 ### Texture
 Texture: TEXTURE_ID,data|url,base_64_or_url 
@@ -695,7 +695,7 @@ Another: [Mine;position=100,200,-1;rotate-z=180]I'm a
 20.0.0-21.0.0|||[font=MaterialIcon]some_circle_ligature
 'show-something'|Default||This will only be shown when the event id is given
 
-#RESOURCE
+#RESOURCES
 Texture: RAMEN,url,../ramen.tga
 // Will we support ligaturs? Pretty important for icon fonts
 Font: MaterialIcon,regular,data,AAEAAAAKAIAAAwAgT1MvMnwMf9s...
