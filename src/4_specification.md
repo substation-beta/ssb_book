@@ -669,7 +669,8 @@ Only the EVENTS section is needed for an output.
 ## Extended
 This is an extended example which shows a lot of SSB properties.
 Script informations, destination values or styles are very useful if a script have to be shared with others or edited in future again.
-```
+
+```ssb
 #INFO
 Title: My new project
 Author: Youka
