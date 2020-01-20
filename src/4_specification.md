@@ -331,7 +331,6 @@ Space between geometries. For text, horizontal space between characters and vert
 ### Transformation
 #### rotate
 ```
-[rotate=0,0,0]
 [rotate-x=0]
 [rotate-y=0]
 [rotate-z=0]
