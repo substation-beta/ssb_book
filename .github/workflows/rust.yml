@@ -44,4 +44,4 @@ jobs:
           personal_token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
           publish_branch: master
           publish_dir: artifacts/ssb-book-build-ready
-          external_repository: substation-beta/substation-beta.github.io.git
+          external_repository: substation-beta/substation-beta.github.io
