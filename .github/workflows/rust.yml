@@ -26,7 +26,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: ssb-book-build-ready
-          path: artifacts
+          path: artifacts/ssb-book-build-ready
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3.2.0
         with:
