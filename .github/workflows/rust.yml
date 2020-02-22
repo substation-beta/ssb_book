@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
     - name: Cache cargo registry
       uses: actions/cache@v1
       with:
@@ -18,7 +20,6 @@ jobs:
       with:
         path: ~/.cargo/git
         key: ${{ runner.os }}-cargo-index-${{ hashFiles('**/Cargo.lock') }}
-    - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
     - name: Upload artifact
