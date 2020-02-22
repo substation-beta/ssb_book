@@ -3,6 +3,30 @@ name: Build
 on: [push]
 
 jobs:
+  build-deps:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        repository: substation-beta/ssb_highlight_js_extension
+        ref: master
+        token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
+    - name: Build highlight.js addon
+      run:
+        yarn
+        yarn run build
+    - name: Upload artifact
+      env: 
+        CARGO_HOME: "cache/cargo"
+      run: cargo build --verbose
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
+      if: success()
+      with:
+        name: highlight-build
+        path: dist
+     
   build:
     runs-on: ubuntu-latest
     steps:
@@ -33,6 +57,13 @@ jobs:
         with:
           name: ssb-book-build-ready
           path: artifacts/ssb-book-build-ready
+      - name: Download deps
+        uses: actions/download-artifact@v1
+        with:
+          name: highlight-build
+          path: artifacts/highlight-build
+      - name: Move highlight.js to correct folder
+        run: mv artifacts/highlight-build/ssb.highlight.min.js artifacts/ssb-book-build-ready/assets/customjs/ssb.highlight.min.js
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3.2.0
         with:
