@@ -27,9 +27,10 @@ jobs:
         with:
           name: ssb-book-build-ready
           path: artifacts
-      - name: Deploy build
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3.2.0
         with:
-          ACCESS_TOKEN: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: artifacts/ssb-book-build-ready
+          personal_token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
+          publish_branch: master
+          publish_dir: artifacts/ssb-book-build-ready
+          external_repository: substation-beta/substation-beta.github.io.git
