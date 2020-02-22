@@ -11,4 +11,4 @@ create-missing = false
 
 [output.html]
 theme = "src/theme"
-additional-js = ["assets/customjs/ssb.highlight.js"]
+additional-js = ["assets/customjs/ssb.highlight.min.js"]
