@@ -13,7 +13,7 @@ jobs:
       run: cargo build --verbose
     - name: Upload artifact
       uses: actions/upload-artifact@v1
-      if: failure()
+      if: success()
       with:
         name: ssb-book-build-ready
         path: target/book
