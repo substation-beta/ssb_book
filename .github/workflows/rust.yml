@@ -23,6 +23,7 @@ jobs:
         path: dist
      
   build:
+    needs: [build-deps]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -32,10 +33,17 @@ jobs:
       with:
         path: cache/cargo/registry
         key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+    - name: Download deps
+      uses: actions/download-artifact@v1
+      with:
+        name: highlight-build
+        path: artifacts/highlight-build
     - name: Build
       env: 
         CARGO_HOME: "cache/cargo"
       run: cargo build --verbose
+    - name: Move highlight.js to correct folder
+      run: mv artifacts/highlight-build/ssb.highlight.min.js target/book/assets/customjs/ssb.highlight.min.js
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       if: success()
@@ -45,20 +53,13 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [build, build-deps]
+    needs: [build]
     steps:
       - name: Download build
         uses: actions/download-artifact@v1
         with:
           name: ssb-book-build-ready
           path: artifacts/ssb-book-build-ready
-      - name: Download deps
-        uses: actions/download-artifact@v1
-        with:
-          name: highlight-build
-          path: artifacts/highlight-build
-      - name: Move highlight.js to correct folder
-        run: mv artifacts/highlight-build/ssb.highlight.min.js artifacts/ssb-book-build-ready/assets/customjs/ssb.highlight.min.js
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3.2.0
         with:
