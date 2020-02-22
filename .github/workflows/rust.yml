@@ -12,10 +12,9 @@ jobs:
         repository: substation-beta/ssb_highlight_js_extension
         ref: master
         token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
-    - name: Build highlight.js addon
-      run:
-        yarn
-        yarn run build
+    - uses: actions/setup-node@v1
+    - run: yarn install
+    - run: yarn run build
     - name: Upload artifact
       env: 
         CARGO_HOME: "cache/cargo"
