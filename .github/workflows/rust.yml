@@ -38,12 +38,12 @@ jobs:
       with:
         name: highlight-build
         path: artifacts/highlight-build
+    - name: Move highlight.js to correct folder
+      run: mv artifacts/highlight-build/ssb.highlight.min.js target/book/assets/customjs/ssb.highlight.min.js
     - name: Build
       env: 
         CARGO_HOME: "cache/cargo"
       run: cargo build --verbose
-    - name: Move highlight.js to correct folder
-      run: mv artifacts/highlight-build/ssb.highlight.min.js target/book/assets/customjs/ssb.highlight.min.js
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       if: success()
