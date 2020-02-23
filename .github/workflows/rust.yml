@@ -40,7 +40,7 @@ jobs:
     - name: Move highlight.js to correct folder
       run: mv artifacts/highlight-build/ssb.highlight.min.js ./ssb.highlight.min.js
     - name: Build
-      run: cargo build --verbose
+      run: cargo build
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       with:
