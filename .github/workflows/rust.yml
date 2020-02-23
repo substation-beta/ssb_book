@@ -27,10 +27,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Cache cargo registry
+    - name: Cache debug folder
       uses: actions/cache@v1
       with:
-        path: cache/cargo/registry
+        path: target/debug
         key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
     - name: Download deps
       uses: actions/download-artifact@v1
@@ -40,8 +40,6 @@ jobs:
     - name: Move highlight.js to correct folder
       run: mv artifacts/highlight-build/ssb.highlight.min.js assets/customjs/ssb.highlight.min.js
     - name: Build
-      env: 
-        CARGO_HOME: "cache/cargo"
       run: cargo build --verbose
     - name: Upload artifact
       uses: actions/upload-artifact@v1
