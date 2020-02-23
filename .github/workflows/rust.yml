@@ -38,7 +38,7 @@ jobs:
         name: highlight-build
         path: artifacts/highlight-build
     - name: Move highlight.js to correct folder
-      run: mv artifacts/highlight-build/ssb.highlight.min.js assets/customjs/ssb.highlight.min.js
+      run: mv artifacts/highlight-build/ssb.highlight.min.js ./ssb.highlight.min.js
     - name: Build
       run: cargo build --verbose
     - name: Upload artifact
