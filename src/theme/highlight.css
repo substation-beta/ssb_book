@@ -67,3 +67,40 @@
 .hljs-strong {
   font-weight: bold;
 }
+
+.hljs-section-title {
+  color: #349da2;
+}
+
+.hljs-attribute-name {
+  color: #5ab3ae;
+}
+
+.hljs-attribute-value {
+  color: green;
+}
+
+.hljs-macro-name {
+  color: #8c4248;
+}
+
+.hljs-event-line {
+  color: #8c7144;
+}
+
+.hljs-event {
+  color: #30608c;
+}
+
+.hljs-event-timestamp {
+  color: #468b66;
+}
+
+.hljs-event-separator {
+  color: black;
+}
+
+.hljs-event-macro,
+.hljs-macro-insert {
+  color: #5ab3ae;
+}
