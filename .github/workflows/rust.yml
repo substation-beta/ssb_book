@@ -31,7 +31,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: target/debug
-        key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+        key: ${{ runner.os }}-cargo-debug-${{ hashFiles('**/Cargo.lock') }}
     - name: Download deps
       uses: actions/download-artifact@v1
       with:
