@@ -108,7 +108,7 @@ Content just shouldn’t be empty, that’s all.
 The EVENTS section describes what to render at all. Every source block tells the renderer: “when render what”.
 Format of source blocks is...
 
-```
+```ssb-events-section
 start-end | macro | note | text
 ```
 
@@ -161,7 +161,7 @@ Comments are source blocks which don’t display anything on render target.
 They can contain line information, like time, style, note and text, so they can be used as backups or multiline notes.
 Commented source blocks differ from others by two / (U+2F) before the first cell.
 
-```
+```ssb-events-section
 //0-2:0.0|||Nothing to see.
 ```
 
@@ -208,14 +208,14 @@ What each wrap-style does is defined in the **wrap-style** section in the style-
 ## Style-Tags
 ### Font
 #### font
-```
+```ssb-event
 [font=Liberation Sans]
 ```
 
 Name of font for text rendering. Defined in the resource section or coming from the operating system.
 
 #### size
-```
+```ssb-event
 [size=20]
 ```
 
@@ -226,28 +226,28 @@ In point mode: point range in pixel.
 In shape mode: no effect.
 
 #### bold
-```
+```ssb-event
 [bold=n]
 ```
 
 Font weight. ‘y’ for bold, ‘n’ for normal.
 
 #### italic
-```
+```ssb-event
 [italic=n]
 ```
 
 Font style. ‘y’ for setting italic, ‘n’ for normal.
 
 #### underline
-```
+```ssb-event
 [underline=n]
 ```
 
 Font decoration. ‘y’ for underlining, ‘n’ for normal.
 
 #### strikeout
-```
+```ssb-event
 [strikeout=n]
 ```
 
@@ -255,7 +255,7 @@ Font decoration 2. ‘y’ for striking out, ‘n’ for normal.
 
 ### Position
 #### position
-```
+```ssb-event
 [position=0,0,0]
 [position=0,0]
 ```
@@ -263,7 +263,7 @@ Font decoration 2. ‘y’ for striking out, ‘n’ for normal.
 Position on screen. 2D or 3D coordinate possible. 0,0 is in the top left corner of the screen.
 
 #### alignment
-```
+```ssb-event
 [alignment=7]
 [alignment=0,0]
 ```
@@ -275,7 +275,7 @@ One value: see keyboard numpad for anchor point definition.
 Two values: horizontal and vertical offset from anchor point as geometry width and height in percent.
 
 #### margin
-```
+```ssb-event
 [margin=10]
 [margin=10,10,10,10]
 [margin-top=10]
@@ -287,7 +287,7 @@ Two values: horizontal and vertical offset from anchor point as geometry width a
 Margin to screen edges in pixel. Only affects line if no position is set.
 
 ### wrap-style
-```
+```ssb-event
 [wrap-style=space]
 ```
 
@@ -302,7 +302,7 @@ With **character** the auto-wrapper will try to break lines at characters.
 With **hyphen** the auto-wrapper will try to intelligently use a dictionary to add hyphens to words in addition to breaking on spaces.
 
 #### direction
-```
+```ssb-event
 [direction=ltr]
 ```
 
@@ -319,7 +319,7 @@ ttb = top-to-down
 btt = bottom-to-top
 
 #### space
-```
+```ssb-event
 [space=0]
 [space=0,0]
 [space-h=0]
@@ -330,7 +330,7 @@ Space between geometries. For text, horizontal space between characters and vert
 
 ### Transformation
 #### rotate
-```
+```ssb-event
 [rotate-x=0]
 [rotate-y=0]
 [rotate-z=0]
@@ -339,7 +339,7 @@ Space between geometries. For text, horizontal space between characters and vert
 Geometry rotation on plane axis in degree.
 
 #### scale
-```
+```ssb-event
 [scale=1,1,1]
 [scale-x=1]
 [scale-y=1]
@@ -349,7 +349,7 @@ Geometry rotation on plane axis in degree.
 Geometry scale on plane axis in percent. (1 = 100%)
 
 #### translate
-```
+```ssb-event
 [translate=0,0,0]
 [translate-x=0]
 [translate-y=0]
@@ -359,7 +359,7 @@ Geometry scale on plane axis in percent. (1 = 100%)
 Geometry translation on plane in pixel.
 
 #### shear
-```
+```ssb-event
 [shear=0,0]
 [shear-x=0]
 [shear-y=0]
@@ -368,14 +368,14 @@ Geometry translation on plane in pixel.
 Geometry shearing on plane as weight.
 
 #### matrix
-```
+```ssb-event
 [matrix=1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
 ```
 
 You can also directly manipulate the matrix yourself, but beware that setting this may reset/overwrite translate, scale, rotate and shear. 
 
 #### reset
-```
+```ssb-event
 [reset]
 ```
 
@@ -385,12 +385,12 @@ Resets transformations in source block or in other words, resets the matrix.
 #### mode
 Geometry type to draw. Every character in a line that is not within squared brackets will be interpreted and rendered as geometry according to this mode.
 
-```
+```ssb-event
 [mode=text]
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-```
+```ssb-event
 [mode=shape]
 ```
 
@@ -420,7 +420,7 @@ m -17 4 b -17 -4 -14 -9 -10 -9 b -4 -9 0 -2 0 -2 b 0 -2 4 -9 10 -9 b 14 -9 17 -4
 
 ![heart shape](assets/img/heart.png)
 
-```
+```ssb-event
 [mode=points]
 ```
 0 0
@@ -429,7 +429,7 @@ TODO: Better example, add picture
 
 
 #### border
-```
+```ssb-event
 [border=2]
 [border=2,2]
 [border-h=2]
@@ -439,14 +439,14 @@ TODO: Better example, add picture
 Border width of geometry.
 
 #### join
-```
+```ssb-event
 [join=round]
 ```
 
 Border and line join style. Can be ‘round’, ‘bevel’ or ‘miter’.
 
 #### cap
-```
+```ssb-event
 [cap=round]
 ```
 
@@ -455,7 +455,7 @@ Border and line cap style. Can be ‘round’, 'butt' or ‘square’.
 ### Textures
 
 #### texture
-```
+```ssb-event
 [texture=RESOURCE_ID]
 ```
 
@@ -464,7 +464,7 @@ Texture on geometry. Texturing enabled by a valid RESOURCE_ID referencing an ima
 Can be set to **@** to use the current frame of the video as a texture.
 
 #### texfill
-```
+```ssb-event
 [texfill=0,0,1,0]
 [texfill=0,0,1,0,pad]
 ```
@@ -489,7 +489,7 @@ Wrapping modes describe what happens outside of the texture on the geometries (b
 
 ### Color
 #### color
-```
+```ssb-event
 [color=FFFFFF]
 [color=FFFFFF,FFFFFF]
 [color=FFFFFF,FFFFFF,FFFFFF]
@@ -505,7 +505,7 @@ Wrapping modes describe what happens outside of the texture on the geometries (b
 Color for geometry or his border. Can be mono, left-to-right gradient, left-to-mid-to-right gradient, 4-corners gradient or 4-corners + center gradient. Color definition in hexadecimal (RGB).
 
 #### alpha
-```
+```ssb-event
 [alpha=FF]
 [alpha=FF,FF]
 [alpha=FF,FF,FF,FF]
@@ -520,7 +520,7 @@ Transparency for geometry or his border. Can be mono, left-to-right gradient, le
 
 ### Rastering
 #### blur
-```
+```ssb-event
 [blur=0]
 [blur=0,0]
 [blur-h=0]
@@ -530,7 +530,7 @@ Transparency for geometry or his border. Can be mono, left-to-right gradient, le
 Gaussian blur on geometry + border. Sigma value defines strength. Horizontal and vertical blur available.
 
 #### mask
-```
+```ssb-event
 [target=mask]
 [target=frame]
 [mask-mode=normal]
@@ -553,12 +553,12 @@ With using **mask-clear** you can reset the entire canvas to 0.
 
 Example:
 
-```
+```ssb-event
 [target=mask;mask-mode=invert;alpha=FF;blur=5;]CIRCLE_SMALL[target=frame;blur=0;]CIRCLE
 ```
 
 #### blend
-```
+```ssb-event
 [blend=overlay]
 ```
 
@@ -583,12 +583,12 @@ screen: 1 - (1 - source color) * (1 - destination color)
 
 ### Animation
 #### animate
-```
-animate=[color=000000;translate-x=20]
-animate=t,[color=000000;translate-x=20]
-animate=0,1000,[color=000000;translate-x=20]
-animate=500,1000,[color=000000;translate-x=-20]
-animate=0,1000,sin(t*pi),[color=000000;translate-x=20]
+```ssb-event
+[animate=[color=000000;translate-x=20]]
+[animate=t,[color=000000;translate-x=20]]
+[animate=0,1000,[color=000000;translate-x=20]]
+[animate=500,1000,[color=000000;translate-x=-20]]
+[animate=0,1000,sin(t*pi),[color=000000;translate-x=20]]
 ```
 
 Interpolates style properties over time.
@@ -629,27 +629,27 @@ Style tags to interpolate.
 The standard karaoke effect will be an interpolation from "color" to "kcolor" in the given k duration.
 
 #### k
-```
+```ssb-event
 [k=100]
 ```
 
 Karaoke duration in milliseconds.
 
 #### kset
-```
+```ssb-event
 [kset=0]
 ```
 
 Reset karaoke time in milliseconds to start time of event.
 
 #### kcolor
-```
+```ssb-event
 [kcolor=FF00FF]
 ```
 
 This will create something akin to the following animation tag for each syllable:
 
-```
+```ssb-event
 [animate=kStart,kEnd,t^0.5,[color=FF00FF]]
 ```
 
@@ -660,7 +660,7 @@ Color to which the karaoke will interpolate within the given duration of the kar
 ## Minimal
 This is an absolute minimal example.
 Only the EVENTS section is needed for an output.
-```
+```ssb
 #EVENTS
 |1.0-5:0.0|||Boring line.|
 ```
