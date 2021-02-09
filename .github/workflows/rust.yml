@@ -12,10 +12,13 @@ jobs:
         repository: substation-beta/ssb_highlight_js_extension
         ref: master
         token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
-    - uses: actions/setup-node@v1
-    - run: yarn install
-    - run: yarn run build
-    - name: Upload artifact
+    - name: Install nodejs
+      uses: actions/setup-node@v1
+    - name: Install ssb_highlight_js_extension dependencies
+      run: yarn install
+    - name: Build ssb_highlight_js_extension
+      run: yarn run build
+    - name: Upload ssb_highlight_js_extension artifact
       uses: actions/upload-artifact@v1
       with:
         name: highlight-build
@@ -27,12 +30,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Cache debug folder
+    - name: Cache build
       uses: actions/cache@v1
       with:
-        path: target/debug
-        key: ${{ runner.os }}-cargo-debug-${{ hashFiles('**/Cargo.lock') }}
-    - name: Download deps
+        path: target
+        key: cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
+    - name: Download dependencies
       uses: actions/download-artifact@v1
       with:
         name: highlight-build
