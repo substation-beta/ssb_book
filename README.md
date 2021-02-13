@@ -1,3 +1,7 @@
+<p align="left">
+    <img src="https://substation-beta.github.io/assets/img/logo.png" height="250" alt="Logo"/>
+</p>
+
 # ssb_book
 [![Website](https://img.shields.io/website/https/substation-beta.github.io.svg?label=book&logo=read%20the%20docs&logoColor=white)](https://substation-beta.github.io) [![License](https://img.shields.io/github/license/substation-beta/ssb_book.svg?logo=github)](https://github.com/substation-beta/ssb_book/blob/master/LICENSE) [![Discord channel](https://img.shields.io/discord/586927398277087235.svg?logo=discord)](https://discord.gg/H8HnPSv)
 
@@ -5,8 +9,17 @@
 
 ---
 
-## Planned
-- [ ] Logo
+
+| Index of contents |
+|:---:|
+| [Substation Beta](#substation-beta) &bull; [Planned](#planned) |
+
+# SubStation Beta
+This project is the source code of the reference definition and documentation of the subtitle format `substation beta` (short **ssb**).
+
+It is build and deployed to a seperate repository where it is presented as a [github-page](https://github.com/substation-beta/ssb_book). 
+
+# Planned
 - [x] General description
 - [ ] Influences & history
 - [ ] Getting started
