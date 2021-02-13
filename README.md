@@ -12,12 +12,25 @@
 
 | Index of contents |
 |:---:|
-| [Substation Beta](#substation-beta) &bull; [Planned](#planned) |
+| [Substation Beta](#substation-beta) &bull; [Planned](#planned) &bull; [Contributing](#contributing) &bull; [License](#license) &bull; [Building](#building) |
 
 # SubStation Beta
 This project is the source code of the reference definition and documentation of the subtitle format `substation beta` (short **ssb**).
 
 It is build and deployed to a seperate repository where it is presented as a [github-page](https://github.com/substation-beta/ssb_book). 
+
+# Contributing
+For contribution details see our general contribution guidelines in the main repository: [CONTRIBUTION.md](https://github.com/substation-beta/ssb_implementation/blob/master/CONTRIBUTING.md).
+
+# License
+TBD
+
+# Building
+If you want to build the ssb_book yourself you just need cargo.
+
+```
+cargo build
+```
 
 # Planned
 - [x] General description
