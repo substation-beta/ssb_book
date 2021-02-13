@@ -12,7 +12,7 @@
 
 | Index of contents |
 |:---:|
-| [Substation Beta](#substation-beta) &bull; [Planned](#planned) &bull; [Contributing](#contributing) &bull; [License](#license) &bull; [Building](#building) |
+| [Substation Beta](#substation-beta) &bull; [Contributing](#contributing) &bull; [License](#license) &bull; [Building](#building) &bull; [Planned](#planned) |
 
 # SubStation Beta
 This project is the source code of the reference definition and documentation of the subtitle format `substation beta` (short **ssb**).
@@ -33,6 +33,8 @@ cargo build
 ```
 
 # Planned
+TODOs for this repository.
+
 - [x] General description
 - [ ] Influences & history
 - [ ] Getting started
